@@ -1,0 +1,385 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Patterson Protective Coatings - Website & Trade Counter Audit - AG1 Consulting</title><style>
+:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--mut:#9aa7b4;--line:#2a3340;--accent:#2f81f7;
+  --good:#3fb950;--bad:#f85149;--gradF:#f85149;--gradD:#e8702a;--gradC:#d29922;--gradB:#3fb950;--gradA:#2ea043;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--mut);font-weight:600}
+header{padding:46px 0 28px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 70% -10%,rgba(47,129,247,.18),transparent)}
+h1{font-size:30px;font-weight:800;margin:10px 0 6px;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:15px}
+.hero{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin:34px 0 8px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+.gradecard{border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center;position:relative;overflow:hidden}
+.gc-F{background:linear-gradient(160deg,#2a1410,#1c2330)}.gc-D{background:linear-gradient(160deg,#2a1c10,#1c2330)}
+.gc-C{background:linear-gradient(160deg,#2a2410,#1c2330)}.gc-B{background:linear-gradient(160deg,#102a1a,#1c2330)}
+.bigletter{font-size:96px;font-weight:900;line-height:1;position:relative}
+.bl-F{color:var(--gradF);text-shadow:0 0 40px rgba(248,81,73,.45)}
+.bl-D{color:var(--gradD);text-shadow:0 0 40px rgba(232,112,42,.45)}
+.bl-C{color:var(--gradC);text-shadow:0 0 40px rgba(210,153,34,.45)}
+.score100{font-size:18px;color:var(--mut);margin-top:6px;position:relative}
+.heroread h2{font-size:21px;font-weight:800;margin-bottom:10px}
+.heroread p{color:var(--mut);font-size:15.5px}
+.heroread .tag{display:inline-block;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--ink);background:var(--panel)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.h{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.rname{font-weight:600;font-size:15px}
+.bar{height:7px;background:#0b0f15;border-radius:99px;margin-top:9px;overflow:hidden}
+.fill{height:100%;border-radius:99px}
+.badge{font-weight:800;font-size:15px;min-width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#0d1117}
+.gF{background:var(--gradF)}.gD{background:var(--gradD)}.gC{background:var(--gradC)}.gB{background:var(--gradB);color:#06210f}.gA{background:var(--gradA);color:#06210f}
+.sc{font-size:12px;color:var(--mut);margin-top:3px}
+.flag{background:linear-gradient(160deg,#2a1410,#161b22);border:1px solid #6f2a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.flag .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--bad);font-weight:700;margin-bottom:8px}
+.win{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.win .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--good);font-weight:700;margin-bottom:8px}
+.warn{background:linear-gradient(160deg,#2a2410,#161b22);border:1px solid #6f5a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.warn .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gradC);font-weight:700;margin-bottom:8px}
+.flag p,.win p,.warn p{color:var(--mut);font-size:14.5px;margin-bottom:9px}
+.flag p:last-child,.win p:last-child,.warn p:last-child{margin-bottom:0}
+.flag b,.win b,.warn b{color:var(--ink)}
+.flag ul,.win ul,.warn ul{margin:0 0 9px 20px;color:var(--mut);font-size:14.5px}
+.flag li,.win li,.warn li{margin-bottom:6px}
+.code{background:#0b0f15;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;line-height:1.85;color:var(--mut);overflow-x:auto}
+.code .ph{color:#ff9d94;font-weight:700}.code .ok{color:#84e0a8;font-weight:700}.code .c{color:#5b6672}
+.cmp{width:100%;border-collapse:collapse;font-size:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.cmp th{text-align:left;padding:11px 14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line);font-weight:700}
+.cmp td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--mut);vertical-align:top}
+.cmp tr:last-child td{border-bottom:none}.cmp td b{color:var(--ink)}.cmp tr.you td{background:#241a12}
+.cmp .yes{color:var(--good);font-weight:700}.cmp .no{color:var(--bad);font-weight:700}
+.opp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.opp{grid-template-columns:1fr}}
+.ocard{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px;text-align:center}
+.ocard .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+.ocard .big{font-size:30px;font-weight:900;color:var(--good);margin:8px 0 2px}
+.ocard .small{font-size:13px;color:var(--mut)}
+.oppnote{color:var(--mut);font-size:14px;margin-top:14px}.oppnote b{color:var(--ink)}
+.arrow{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px 0 2px;flex-wrap:wrap}
+.pill{font-size:60px;font-weight:900;line-height:1}
+.pill.from-F{color:var(--gradF)}.pill.from-D{color:var(--gradD)}.pill.from-C{color:var(--gradC)}
+.pill.to{color:var(--gradA)}
+.pilllab{font-size:12px;color:var(--mut);text-align:center;text-transform:uppercase;letter-spacing:.1em}
+.ar{font-size:34px;color:var(--mut)}
+ul.road{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:760px){ul.road{grid-template-columns:1fr}}
+ul.road li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:11px 14px;font-size:14.5px}
+.road2 li{border-left-color:var(--good)}
+.cta{text-align:center;padding:40px 0 56px}
+.cta h2{font-size:22px;font-weight:800;margin-bottom:8px}
+.cta p{color:var(--mut);font-size:15px}
+footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;line-height:1.7}
+.gscale{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 20px;margin-top:16px}
+.gscale .gtitle{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);font-weight:700;margin-bottom:26px;text-align:center}
+.gtrack{position:relative;height:14px;border-radius:8px;background:linear-gradient(90deg,#f85149 0%,#f85149 18%,#e3833c 34%,#d4a72c 52%,#7ec46a 74%,#3fb950 100%);margin:0 4px}
+.gmark{position:absolute;top:-46px;transform:translateX(-50%);text-align:center;white-space:nowrap}
+.gmark .gm-lab{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);font-weight:700}
+.gmark .gm-val{font-size:19px;font-weight:900;line-height:1.15}
+.gmark:after{content:"";position:absolute;left:50%;top:100%;width:2px;height:22px;transform:translateX(-50%);background:currentColor;opacity:.75}
+.gmark.now{color:var(--bad)}.gmark.now .gm-val{color:var(--bad)}
+.gmark.proj{color:var(--good)}.gmark.proj .gm-val{color:var(--good)}
+.gmark.proj{top:auto;bottom:-52px}
+.gmark.proj:after{top:auto;bottom:100%}
+.gdot{position:absolute;top:50%;width:16px;height:16px;border-radius:50%;transform:translate(-50%,-50%);border:3px solid #0d1117}
+.gdot.now{background:var(--bad)}.gdot.proj{background:var(--good)}
+.gticks{display:flex;justify-content:space-between;margin:66px 4px 0;font-size:11px;letter-spacing:.08em;color:var(--mut);font-weight:700}
+@media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
+</style></head><body>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Website &amp; Trade Counter Audit</div>
+    <h1>Patterson Protective Coatings Ltd &mdash; Belfast</h1>
+    <div class="sub">Prepared for the Patterson family &middot; 7 September 2026 &middot; AG1 Consulting</div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="gradecard gc-C">
+      <div class="bigletter bl-C">C</div>
+      <div class="score100">52 / 100</div>
+    </div>
+    <div class="heroread">
+      <h2>571 products on your website. Not one of them has a price or a buy button.</h2>
+      <p><b>You are a distributor, not a contractor</b> &mdash; so this audit is not about sending you
+      homeowners, and we are not going to pretend otherwise. <b>It is about the shop you already own
+      and are not running.</b> WooCommerce is installed, the cart page works, the account page works
+      &mdash; and every one of your 571 products is browse-only.</p>
+      <span class="tag">Albertbridge Road, Belfast &middot; trading since 1999 &middot; Jotun, Remmers, Rust-Oleum, Tor, Flexcrete, Watco</span>
+    </div>
+  </div>
+
+  <section>
+    <div class="h">First, The Thing You Are Right About</div>
+    <div class="good">
+      <div class="lab">We are not going to sell you something that does not fit</div>
+      <p><b>You told our team that you are a supplier &mdash; that you handle enquiries for the people
+      who do the paint jobs &mdash; and that most of what a marketing agency does therefore cannot help
+      you. That is a fair read, and on the usual version of the pitch you are correct.</b></p>
+      <p>Chasing homeowners would be wrong for you. Your customers are contractors, applicators,
+      facilities teams and specifiers. <b>They already know coatings. They are not going to be persuaded
+      by an advert.</b></p>
+      <p><b>So everything below is about three things only:</b> the online counter you have already
+      built and not switched on, the specification work you already do and cannot measure, and the
+      27 years of proof sitting on your site under a filename that says &ldquo;test&rdquo;.</p>
+      <p><b>Nothing in here asks you to become something you are not.</b></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">Finding 1 &mdash; You Have Built A Shop And Left It Locked</div>
+    <div class="flag">
+      <div class="lab">Read from your live site and sitemap, 7 September 2026</div>
+      <div class="code">Products published            <span class="ok">571</span>
+Product categories            <span class="ok">27</span>
+Products showing a price      <span class="ph">0</span>
+Products with a buy button    <span class="ph">0</span>
+WooCommerce installed         <span class="ok">yes</span>
+Cart page live                <span class="ok">yes</span>   <span class="c">/cart/ returns a working page</span>
+Account page live             <span class="ok">yes</span>   <span class="c">/my-account/ returns a working page</span>
+Order attribution tracking    <span class="ok">installed</span>  <span class="c">WooCommerce sourcebuster is running</span></div>
+      <p><b>The whole till is fitted and the drawer is empty.</b> You have paid for a full ecommerce
+      system, catalogued 571 products across 27 categories, and a customer who finds a paint brush on
+      your site cannot buy it.</p>
+      <p><b>Look at what is actually in that catalogue.</b> Contractor brushes. Wire cage roller frames.
+      Chipping hammers. Brown paper rolls. Disposable overalls. Drill mixing paddles. Squeegee holders.
+      <b>These are consumables.</b> The same contractor buys them again next month, and the month after.</p>
+      <p><b>That is the easiest revenue in your business and the least worth a phone call.</b> A
+      contractor ordering forty pounds of brushes has to ring your counter, and somebody on your team
+      has to stop what they are doing and take that order by hand &mdash; at seven staff, that is not a
+      small cost.</p>
+      <p><b>The coatings themselves are a different matter and we would leave them alone.</b> Jotun and
+      Remmers systems need a specification, a substrate and a conversation. Nobody should be buying
+      those from a dropdown, and we are not suggesting it. <b>The tools and consumables are not that
+      &mdash; and they are the ones already listed with no price.</b></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">Finding 2 &mdash; Nothing On The Site Is Measured</div>
+    <div class="flag">
+      <div class="lab">Searched the full served page source</div>
+      <div class="code">Google Analytics      <span class="ph">not present</span>
+Google Tag Manager    <span class="ph">not present</span>
+Google Ads tag        <span class="ph">not present</span>
+Meta pixel            <span class="ph">not present</span>
+Call tracking         <span class="ph">not present</span>
+
+Scripts actually served: <span class="c">jQuery, WooCommerce, the site theme,
+Gravity Forms and Google reCAPTCHA. Nothing else.</span></div>
+      <p><b>There is no analytics of any kind on the website.</b> Not a broken one, not an old one
+      &mdash; none.</p>
+      <p><b>This matters far more for you than it would for a contractor</b>, because of what you sell.
+      You carry eight brands and 27 product categories. <b>You cannot see which of them people come
+      looking for.</b></p>
+      <p>Which brand gets searched for most. Which category people browse and then leave. Which of your
+      571 products get looked at every week and which have never been opened. <b>That is stock
+      intelligence, not marketing</b> &mdash; and for a distributor holding inventory it is worth more
+      than any advert.</p>
+      <p><b>WooCommerce is already recording where orders come from</b> &mdash; the order attribution
+      script is live on your site. <b>Nothing is reading it.</b></p>
+      <p>Analytics is free, and it only records from the day it is switched on. <b>Every week without it
+      is a week of history that cannot be recovered later.</b></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">Finding 3 &mdash; Royal Hillsborough Castle Is Filed Under &ldquo;test-1&rdquo;</div>
+    <div class="flag">
+      <div class="lab">Your live case study URLs, exactly as published</div>
+      <div class="code">/case-studies/<span class="ph">test-1</span>/            <span class="c">&rarr; Royal Hillsborough Castle Gates</span>
+/case-studies/<span class="ph">test-8</span>/            <span class="c">&rarr; Commercial Roof Renovation</span>
+/case-studies/<span class="ph">test-case-study</span>/   <span class="c">&rarr; published and live</span>
+/case-studies/interior-waterproofing/  <span class="ok">&larr; the only one named properly</span>
+
+Case studies published in total   <span class="ph">4</span>   <span class="c">in 27 years of trading</span></div>
+      <p><b>You have supplied coatings for the gates at Royal Hillsborough Castle</b> &mdash; the King's
+      official residence in Northern Ireland &mdash; <b>and the page is called test-1.</b></p>
+      <p>Three of your four case studies are still sitting on the placeholder web addresses the site
+      builder used while they were setting the section up. <b>They were never renamed, and they are
+      live and public right now.</b></p>
+      <p><b>Two separate things are wrong here and only one of them is technical.</b></p>
+      <p><b>The technical one:</b> a page called <span class="mono">test-1</span> tells Google nothing.
+      A page called <span class="mono">royal-hillsborough-castle-gates-coating</span> tells it exactly
+      what the page is about. That is a ten-minute fix.</p>
+      <p><b>The one that actually costs you money:</b> four case studies in 27 years. <b>You are the
+      firm the specifier has to be convinced by</b>, and a royal residence is about as strong as a
+      reference gets in Northern Ireland. It is buried, unnamed, and it is one of only four.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">Finding 4 &mdash; The Specification Side Is Invisible</div>
+    <div class="flag">
+      <div class="lab">Services listed on your own site, with no page built for any of them</div>
+      <div class="code">Site surveys           <span class="ph">link only, no page content</span>
+Specifications         <span class="ph">link only, no page content</span>
+Demonstrations         <span class="ph">link only, no page content</span>
+CPD presentations      <span class="ph">link only, no page content</span>
+
+Brochures hosted       <span class="ok">25</span>  <span class="c">a genuine library, and a real asset</span></div>
+      <p><b>This is the most valuable thing on your website and it is four words in a menu.</b></p>
+      <p>You offer CPD presentations. <b>That means you go into architects' and engineers' offices and
+      teach.</b> In the specification trade that is not marketing collateral &mdash; it is the whole
+      route to market. <b>The specifier writes your system into the document, and then every contractor
+      bidding that job has to come to you.</b></p>
+      <p><b>An architect looking for a CPD on protective coatings, intumescent systems or resin floors
+      will search for exactly that.</b> There is no page on your site for them to find.</p>
+      <p><b>Your 25-brochure library is the same story.</b> It is a genuinely useful resource that
+      specifiers want, and there is nothing capturing who downloads what. <b>A specifier downloading
+      your intumescent brochure is the single most valuable visitor your site gets</b>, and today they
+      arrive and leave without you knowing they existed.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">Finding 5 &mdash; The Site Has Been Left Alone</div>
+    <div class="flag">
+      <div class="lab">Freshness, read from your sitemap</div>
+      <div class="code">News articles published       <span class="ph">3</span>
+Most recent news article      <span class="ph">19 December 2024</span>   <span class="c">roughly 20 months ago</span>
+Most prominent news item      <span class="ph">"Christmas 2024"</span>
+Most recent portfolio item    <span class="c">29 January 2026</span></div>
+      <p><b>The most visible dated thing on your website is a Christmas message from 2024.</b></p>
+      <p>To a contractor who already knows you, that means nothing &mdash; they ring the counter
+      regardless. <b>To a specifier checking you out before writing you into a document, a site that
+      looks last-touched two Christmases ago is a small reason to hesitate</b>, and they will never tell
+      you that was the reason.</p>
+      <p><b>This is the least urgent finding in the document</b> and we are including it for
+      completeness rather than alarm. It is a symptom of the same thing as Findings 1 and 3: the site
+      was built well, handed over, and nobody has been back through it since.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">What Is Genuinely Good</div>
+    <div class="good">
+      <div class="lab">And there is a lot of it &mdash; this is a well-built site and a serious business</div>
+      <ul>
+        <li><b>571 products, properly catalogued across 27 categories.</b> That is a real piece of work and it is already done. The hard part of an online counter is the catalogue, and you have it.</li>
+        <li><b>Eight brands, named and given their own pages</b> &mdash; Jotun, Remmers, Rust-Oleum, Tor, Flexcrete, Watco. Contractors search by brand and you are findable for them.</li>
+        <li><b>A 25-brochure technical library.</b> Very few distributors bother, and specifiers genuinely use these.</li>
+        <li><b>A working enquiry form and a tap-to-call number</b> &mdash; 028 9073 1333 &mdash; both functioning correctly on mobile.</li>
+        <li><b>Email on your own domain</b>, which a surprising number of firms still get wrong.</li>
+        <li><b>The site is well built and fast on a phone.</b> This is not a cheap template job and it does not need replacing.</li>
+        <li><b>Twenty-seven years trading, same family, same address.</b> That is the part nobody can shortcut, and it is already yours.</li>
+      </ul>
+      <p><b>Nothing in this document needs a new website.</b> The asset is built. It needs switching on,
+      measured, and its best work brought to the front.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">The Scorecard</div>
+    <table class="score">
+      <tr><td><b>Analytics</b></td><td>Nothing installed. No baseline at all.</td><td class="g-F">F</td></tr>
+      <tr><td><b>Ecommerce enabled</b></td><td>571 products, no price and no buy button on any of them.</td><td class="g-F">F</td></tr>
+      <tr><td><b>Conversion tracking</b></td><td>Nothing counted, so nothing can be judged.</td><td class="g-F">F</td></tr>
+      <tr><td><b>Call tracking</b></td><td>None, and the counter phone is the main channel.</td><td class="g-F">F</td></tr>
+      <tr><td><b>Brochure capture</b></td><td>25 brochures, no record of who downloads them.</td><td class="g-F">F</td></tr>
+      <tr><td><b>Specification pages</b></td><td>Surveys, specs, demos and CPD are menu links with no page.</td><td class="g-D">D&minus;</td></tr>
+      <tr><td><b>Case study URLs</b></td><td>Three of four still on &ldquo;test&rdquo; placeholder addresses.</td><td class="g-D">D&minus;</td></tr>
+      <tr><td><b>Proof volume</b></td><td>Four case studies published in 27 years of trading.</td><td class="g-D">D</td></tr>
+      <tr><td><b>Content freshness</b></td><td>Newest article December 2024. &ldquo;Christmas 2024&rdquo; still prominent.</td><td class="g-D">D</td></tr>
+      <tr><td><b>Reviews shown</b></td><td>No rating, review count or testimonial anywhere on the site.</td><td class="g-D">D</td></tr>
+      <tr><td><b>Trade account offer</b></td><td>Account page exists; nothing invites a contractor to open one.</td><td class="g-C">C&minus;</td></tr>
+      <tr><td><b>Enquiry form</b></td><td>Works, with reCAPTCHA. Does not distinguish a specifier from a tin of paint.</td><td class="g-C">C</td></tr>
+      <tr><td><b>Mobile build quality</b></td><td>Fast, correct and professional. No complaints.</td><td class="g-B">B</td></tr>
+      <tr><td><b>Brand coverage</b></td><td>Eight brands with their own pages. Contractors search this way.</td><td class="g-B">B</td></tr>
+      <tr><td><b>Product catalogue</b></td><td>571 products, 27 categories, properly structured.</td><td class="g-A">A&minus;</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <div class="h">The Opportunity</div>
+    <div class="opp">
+      <div class="oc"><div class="on">571</div><div class="ol">products listed &mdash; none purchasable</div></div>
+      <div class="oc"><div class="on">0</div><div class="ol">tracking tags &mdash; nothing is counted</div></div>
+      <div class="oc"><div class="on">4</div><div class="ol">case studies in 27 years, 3 named &ldquo;test&rdquo;</div></div>
+    </div>
+    <p class="oppnote"><b>No revenue figure appears in this document, and no forecast of orders or
+    profit.</b> We do not know your average order value, your margin on consumables against coatings,
+    or how much of your counter time already goes on small repeat orders. <b>Those three numbers decide
+    whether the shop is worth switching on</b>, and only you have them. <b>Bring them to the call
+    &mdash; that is the conversation.</b></p>
+  </section>
+
+  <section>
+    <div class="h">Fix First &mdash; This Week, And Most Of It Is Free</div>
+    <div class="good">
+      <ul>
+        <li><b>Install analytics.</b> Free, and it starts counting the day it goes on. Everything else is guesswork until this exists.</li>
+        <li><b>Rename the three &ldquo;test&rdquo; case study addresses.</b> Ten minutes, and it stops a royal residence being filed as a placeholder.</li>
+        <li><b>Put Royal Hillsborough Castle on the homepage.</b> It is your strongest single reference and it is three clicks deep.</li>
+        <li><b>Ask your best twenty contractors for a Google review.</b> You have 27 years of goodwill and nothing published.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">Build Next</div>
+    <div class="flag">
+      <ul>
+        <li><b>Switch on prices and ordering for tools and consumables only.</b> Leave every coating as an enquiry. This is the whole first phase and it touches nothing about how you sell systems.</li>
+        <li><b>A trade account signup</b> &mdash; contractor prices behind a login, which is how your customers already expect to buy.</li>
+        <li><b>A real page for CPD presentations and specifications</b>, written for architects and engineers rather than contractors.</li>
+        <li><b>Capture on the brochure library</b>, so you know which specifier downloaded which system and can follow it up.</li>
+        <li><b>More case studies.</b> You have 27 years of them and four published.</li>
+      </ul>
+    </div>
+    <p class="oppnote"><b>The order matters.</b> Analytics first, because it costs nothing and every
+    decision after it is better informed. <b>The shop second, because it is already built and paid
+    for.</b> Everything else can wait until those two are earning.</p>
+  </section>
+
+  <section>
+    <div class="h">Projected Grade After Build</div>
+    <div class="proj">
+      <div class="pj"><div class="pl">C &middot; 52</div><div class="pd">You today</div></div>
+      <div class="pj"><div class="pl">A &middot; 90</div><div class="pd">After the build</div></div>
+    </div>
+    <p class="oppnote"><b>Projected, not promised.</b> It is a projection of the fifteen rows in the
+    scorecard above, which are all things on your own website that we can see and change. <b>It is not
+    a projection of orders, enquiries or revenue</b>, and it should not be read as one.</p>
+  </section>
+
+  <section>
+    <div class="h">The Short Version</div>
+    <div class="good">
+      <p><b>You are right that you are not a contractor and that chasing homeowners would be a waste of
+      your money.</b></p>
+      <p><b>But you have a shop with 571 products and no prices, a royal residence filed under
+      &ldquo;test-1&rdquo;, and no way of knowing which of your eight brands anybody is looking
+      for.</b></p>
+      <p><b>None of that is marketing. It is a counter you have already built and have not opened.</b></p>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p>Prepared by Andrei Givero &middot; AG1 Consulting &middot; 7 September 2026</p>
+    <p>For Patterson Protective Coatings Ltd, 347b Albertbridge Road, Belfast BT5 4PY (company NI035851).
+    All findings were read from ppcoatings.co.uk, its served page source and its published XML sitemaps
+    on 7 September 2026, and reflect those pages on that date only. <b>The findings that no analytics,
+    advertising or call-tracking tags are present, that no product displays a price or an add-to-cart
+    control, and that three case study addresses use &ldquo;test&rdquo; placeholders, are literal
+    readings of that source and those sitemaps</b> &mdash; elements added by script after the page
+    loads, content behind a login, or pages we did not read would not appear in that check. <b>Please
+    verify before drawing a conclusion.</b> Product, category, brochure and article counts are taken
+    from your own sitemap files. <b>Absence of reviews, ratings or testimonials means none was present
+    in the pages we read &mdash; not that you do not have them.</b> The description of Royal
+    Hillsborough Castle Gates is taken from the title of your own published case study page and we have
+    not independently verified the project. <b>The suggestion to enable online ordering for tools and
+    consumables is a recommendation for discussion only</b>; whether it suits your margins, your trade
+    pricing or your counter is a commercial judgement that is yours to make, and no claim is made here
+    about what it would earn. <b>No revenue, order volume or profit figure is stated or implied
+    anywhere in this document.</b> Companies House registration details are a matter of public record.
+    Grades are AG1's own assessment against our published criteria and are not an industry standard.</p>
+  </div>
+</footer>
+</body></html>
