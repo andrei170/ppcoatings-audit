@@ -1,0 +1,348 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Patterson Protective Coatings — Plan Of Action — AG1</title><style>
+:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--mut:#9aa7b4;--line:#2a3340;--accent:#2f81f7;
+  --good:#3fb950;--bad:#f85149;--gradF:#f85149;--gradD:#e8702a;--gradC:#d29922;--gradB:#3fb950;--gradA:#2ea043;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--mut);font-weight:600}
+header{padding:46px 0 28px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 70% -10%,rgba(47,129,247,.18),transparent)}
+h1{font-size:30px;font-weight:800;margin:10px 0 6px;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:15px}
+.hero{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin:34px 0 8px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+.gradecard{border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center;position:relative;overflow:hidden}
+.gc-F{background:linear-gradient(160deg,#2a1410,#1c2330)}.gc-D{background:linear-gradient(160deg,#2a1c10,#1c2330)}
+.gc-C{background:linear-gradient(160deg,#2a2410,#1c2330)}.gc-B{background:linear-gradient(160deg,#102a1a,#1c2330)}
+.bigletter{font-size:96px;font-weight:900;line-height:1;position:relative}
+.bl-F{color:var(--gradF);text-shadow:0 0 40px rgba(248,81,73,.45)}
+.bl-D{color:var(--gradD);text-shadow:0 0 40px rgba(232,112,42,.45)}
+.bl-C{color:var(--gradC);text-shadow:0 0 40px rgba(210,153,34,.45)}
+.score100{font-size:18px;color:var(--mut);margin-top:6px;position:relative}
+.heroread h2{font-size:21px;font-weight:800;margin-bottom:10px}
+.heroread p{color:var(--mut);font-size:15.5px}
+.heroread .tag{display:inline-block;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--ink);background:var(--panel)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.h{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.rname{font-weight:600;font-size:15px}
+.bar{height:7px;background:#0b0f15;border-radius:99px;margin-top:9px;overflow:hidden}
+.fill{height:100%;border-radius:99px}
+.badge{font-weight:800;font-size:15px;min-width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#0d1117}
+.gF{background:var(--gradF)}.gD{background:var(--gradD)}.gC{background:var(--gradC)}.gB{background:var(--gradB);color:#06210f}.gA{background:var(--gradA);color:#06210f}
+.sc{font-size:12px;color:var(--mut);margin-top:3px}
+.flag{background:linear-gradient(160deg,#2a1410,#161b22);border:1px solid #6f2a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.flag .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--bad);font-weight:700;margin-bottom:8px}
+.win{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.win .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--good);font-weight:700;margin-bottom:8px}
+.warn{background:linear-gradient(160deg,#2a2410,#161b22);border:1px solid #6f5a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.warn .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gradC);font-weight:700;margin-bottom:8px}
+.flag p,.win p,.warn p{color:var(--mut);font-size:14.5px;margin-bottom:9px}
+.flag p:last-child,.win p:last-child,.warn p:last-child{margin-bottom:0}
+.flag b,.win b,.warn b{color:var(--ink)}
+.flag ul,.win ul,.warn ul{margin:0 0 9px 20px;color:var(--mut);font-size:14.5px}
+.flag li,.win li,.warn li{margin-bottom:6px}
+.code{background:#0b0f15;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;line-height:1.85;color:var(--mut);overflow-x:auto}
+.code .ph{color:#ff9d94;font-weight:700}.code .ok{color:#84e0a8;font-weight:700}.code .c{color:#5b6672}
+.cmp{width:100%;border-collapse:collapse;font-size:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.cmp th{text-align:left;padding:11px 14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line);font-weight:700}
+.cmp td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--mut);vertical-align:top}
+.cmp tr:last-child td{border-bottom:none}.cmp td b{color:var(--ink)}.cmp tr.you td{background:#241a12}
+.cmp .yes{color:var(--good);font-weight:700}.cmp .no{color:var(--bad);font-weight:700}
+.opp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.opp{grid-template-columns:1fr}}
+.ocard{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px;text-align:center}
+.ocard .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+.ocard .big{font-size:30px;font-weight:900;color:var(--good);margin:8px 0 2px}
+.ocard .small{font-size:13px;color:var(--mut)}
+.oppnote{color:var(--mut);font-size:14px;margin-top:14px}.oppnote b{color:var(--ink)}
+.arrow{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px 0 2px;flex-wrap:wrap}
+.pill{font-size:60px;font-weight:900;line-height:1}
+.pill.from-F{color:var(--gradF)}.pill.from-D{color:var(--gradD)}.pill.from-C{color:var(--gradC)}
+.pill.to{color:var(--gradA)}
+.pilllab{font-size:12px;color:var(--mut);text-align:center;text-transform:uppercase;letter-spacing:.1em}
+.ar{font-size:34px;color:var(--mut)}
+ul.road{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:760px){ul.road{grid-template-columns:1fr}}
+ul.road li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:11px 14px;font-size:14.5px}
+.road2 li{border-left-color:var(--good)}
+.cta{text-align:center;padding:40px 0 56px}
+.cta h2{font-size:22px;font-weight:800;margin-bottom:8px}
+.cta p{color:var(--mut);font-size:15px}
+footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;line-height:1.7}
+.gscale{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 20px;margin-top:16px}
+.gscale .gtitle{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);font-weight:700;margin-bottom:26px;text-align:center}
+.gtrack{position:relative;height:14px;border-radius:8px;background:linear-gradient(90deg,#f85149 0%,#f85149 18%,#e3833c 34%,#d4a72c 52%,#7ec46a 74%,#3fb950 100%);margin:0 4px}
+.gmark{position:absolute;top:-46px;transform:translateX(-50%);text-align:center;white-space:nowrap}
+.gmark .gm-lab{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);font-weight:700}
+.gmark .gm-val{font-size:19px;font-weight:900;line-height:1.15}
+.gmark:after{content:"";position:absolute;left:50%;top:100%;width:2px;height:22px;transform:translateX(-50%);background:currentColor;opacity:.75}
+.gmark.now{color:var(--bad)}.gmark.now .gm-val{color:var(--bad)}
+.gmark.proj{color:var(--good)}.gmark.proj .gm-val{color:var(--good)}
+.gmark.proj{top:auto;bottom:-52px}
+.gmark.proj:after{top:auto;bottom:100%}
+.gdot{position:absolute;top:50%;width:16px;height:16px;border-radius:50%;transform:translate(-50%,-50%);border:3px solid #0d1117}
+.gdot.now{background:var(--bad)}.gdot.proj{background:var(--good)}
+.gticks{display:flex;justify-content:space-between;margin:66px 4px 0;font-size:11px;letter-spacing:.08em;color:var(--mut);font-weight:700}
+@media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
+</style></head><body>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Plan Of Action</div>
+    <h1>Patterson Protective Coatings &mdash; Getting To &pound;2.5M Without Growing The Operation</h1>
+    <div class="sub">Prepared for Warren and Alvin Patterson &middot; 8 September 2026 &middot; AG1 Consulting</div>
+
+    <div class="hero">
+      <div class="gradecard gc-C">
+        <div class="bigletter bl-C" style="font-size:64px">+25%</div>
+        <div class="score100">&pound;2M &rarr; &pound;2.5M</div>
+      </div>
+      <div class="heroread">
+        <h2>You do not need more customers. You need to lose fewer of the ones you already quote.</h2>
+        <p>You told us the target is <b>&pound;2.5&ndash;3M</b> against roughly <b>&pound;2M</b> today,
+        that <b>doubling would be too much</b>, and that the thing holding you back is
+        <b>operational, not a shortage of demand</b>.</p>
+        <p>That single sentence rules out almost everything a marketing agency would normally
+        propose. Everything in this plan is built to get more out of the enquiries you already
+        receive, and to hand you back capacity you are currently spending on low-value work.</p>
+        <div class="tag">Northern Ireland only &middot; mainly B2B &middot; 20&ndash;50% margin &middot; 27 years trading</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="h">What You Told Us, And What It Rules Out</div>
+    <table class="cmp">
+      <tr><th>What you told us</th><th>What follows from it</th></tr>
+      <tr><td><b>Turnover around &pound;2M, goal &pound;2.5&ndash;3M</b></td><td>A 25&ndash;50% increase. Meaningful, but not a transformation.</td></tr>
+      <tr><td><b>&ldquo;Doubling would be too much&rdquo;</b></td><td>There is a ceiling you actually want. We plan to it, not past it.</td></tr>
+      <tr><td><b>The constraint is operational</b></td><td class="no">Rules out volume campaigns entirely. More enquiries would make things worse.</td></tr>
+      <tr><td><b>Margin ranges 20&ndash;50%</b></td><td>Which jobs you win matters more than how many. This is the biggest lever you have.</td></tr>
+      <tr><td><b>Northern Ireland only</b></td><td class="yes">Your market is small enough to list by name. That is an advantage, not a limit.</td></tr>
+      <tr><td><b>Mainly B2B</b></td><td>Contractors, specifiers and facilities teams &mdash; not homeowners, and not advertising.</td></tr>
+      <tr><td><b>You do not sell online today</b></td><td>Any online ordering is a decision to be made deliberately, not assumed. See the open question below.</td></tr>
+    </table>
+    <div class="flag">
+      <div class="lab">So the first thing we are ruling out is our own usual product</div>
+      <p>We are <b>not</b> proposing advertising. Not Google, not Meta, not spend of any kind on your
+      behalf. Alvin's read on the first call &mdash; that most of what a marketing agency does cannot
+      help a supplier like you &mdash; was correct, and the operational ceiling makes it doubly
+      correct. Buying more enquiries for a business that cannot install them is how firms end up with
+      a longer waiting list and a worse reputation.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">The Arithmetic That Sets The Whole Plan</div>
+    <div class="opp">
+      <div class="ocard"><div class="lab">The gap to close</div><div class="big">&pound;500k</div><div class="small">&pound;2M today to &pound;2.5M target</div></div>
+      <div class="ocard"><div class="lab">At your stated margin</div><div class="big">20&ndash;50%</div><div class="small">so &pound;100k&ndash;250k of gross profit</div></div>
+      <div class="ocard"><div class="lab">Quotes tracked today</div><div class="big">0</div><div class="small">nothing records issued, won or lost</div></div>
+    </div>
+    <p class="oppnote"><b>One number decides how hard this is, and only you have it: your average
+    delivery value.</b> The gap divided by that figure is exactly how many more quotes a year need to
+    turn into orders. If it is a large number, the answer is the margin mix. If it is a small number,
+    the answer is follow-up alone. <b>We are not going to guess it, and we have not assumed it
+    anywhere in this document.</b></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">The Four Levers, In The Order We Would Pull Them</div>
+
+    <div class="win">
+      <div class="lab">Lever 1 &mdash; Recover the quotes you already issued</div>
+      <p><b>No new demand required. No capacity risk. Start here.</b></p>
+      <p>Every firm that asked you to price a job had already decided the work needed doing. The
+      estimating time is already spent. Some of those quotes were lost on price and some were lost
+      because the job slipped and nobody rang back &mdash; <b>and today you cannot tell those two
+      apart</b>, because nothing records that a quote ever happened.</p>
+      <p>Those two causes need opposite responses. One is a pricing conversation. The other is a
+      phone call that never got made. Recovering even a portion of the second costs you nothing in
+      capacity, because those jobs were already yours to lose.</p>
+    </div>
+
+    <div class="win">
+      <div class="lab">Lever 2 &mdash; Steer the mix toward the 50% end</div>
+      <p><b>The single biggest lever in the business, and it is currently unmanaged.</b></p>
+      <p>You told us margin ranges from <b>20% to 50%</b>. That spread is enormous. The same
+      &pound;500k of revenue is worth &pound;100k or &pound;250k of gross profit depending entirely on
+      which jobs it comes from.</p>
+      <p>Nothing currently records which jobs sit at which end, so the mix is whatever walks through
+      the door. Once quotes carry a value and an outcome, you can see the pattern &mdash; by job type,
+      by customer, by product &mdash; and quote deliberately toward the profitable end.
+      <b>Same capacity. More money. No extra jobs.</b></p>
+    </div>
+
+    <div class="win">
+      <div class="lab">Lever 3 &mdash; Give your counter its time back</div>
+      <p><b>This is the one that attacks the operational constraint directly.</b></p>
+      <p>Every small repeat order &mdash; brushes, rollers, masking, overalls, paddles &mdash; taken
+      by hand at the counter is time your people are not spending on the thing you actually sell,
+      which is working out systems and quantities. That estimating judgement is your product. The
+      brush order is not.</p>
+      <p>Moving predictable repeat consumables off the counter is not an ecommerce project. It is
+      <b>capacity recovery</b> &mdash; and capacity is the exact thing you told us is stopping you.
+      It is how a business grows 25% without hiring 25% more people.</p>
+      <p><b>Coatings stay an enquiry, permanently.</b> Every Jotun, Remmers and Flexcrete system needs
+      a substrate, a specification and one of your people on the phone. We would not touch that, and
+      nobody should be buying those from a dropdown.</p>
+    </div>
+
+    <div class="win">
+      <div class="lab">Lever 4 &mdash; Be upstream of the work, not bidding for it</div>
+      <p><b>Longest to pay off, and the one that gets you to &pound;3M rather than &pound;2.5M.</b></p>
+      <p>You already offer CPD presentations, site surveys, specifications and demonstrations. In the
+      specification trade that is not marketing collateral &mdash; it is the whole route to market.
+      <b>The specifier writes your system into the document, and then every contractor bidding that
+      job has to come to you.</b></p>
+      <p>That is being upstream of the work instead of competing for it. And it selects for exactly
+      the jobs you want: larger, specified, higher margin, planned in advance rather than urgent.</p>
+      <p>Today there is <b>no page on your website</b> for surveys, specifications, demonstrations or
+      CPD. They are four words in a menu. An architect searching for CPD on protective coatings finds
+      nothing of yours.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Why Northern Ireland Being Small Is An Advantage</div>
+    <div class="warn">
+      <div class="lab">Your market can be listed by name</div>
+      <p>You told us you sell into Northern Ireland only. That is normally described as a limitation.
+      For what you sell, it is the opposite.</p>
+      <p>Every organisation in Northern Ireland that could ever buy protective coatings <b>can be
+      written down</b>: the commercial and industrial contractors, the architecture practices, the
+      engineering consultancies, the facilities teams, the councils, the housing associations. It is a
+      countable set, not an anonymous audience.</p>
+      <p>That means <b>coverage, not advertising</b>. You do not need to pay to be found by people you
+      could simply write to, ring, or present a CPD to. And you can know, at any moment, what
+      percentage of the total addressable market in this country you have actually spoken to &mdash;
+      which is a number almost no business can calculate.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">The Open Question We Need Answered Before Anything Is Built</div>
+    <div class="flag">
+      <div class="lab">Warren &mdash; this one is yours</div>
+      <p>You said you do not aspire to share pricing online. We have deliberately <b>not</b> designed
+      around that until we know which of two very different things you meant:</p>
+      <table class="cmp" style="margin-top:12px">
+        <tr><th>If you meant</th><th>Then</th></tr>
+        <tr><td><b>&ldquo;I don't want my prices public, where competitors and every customer can see them&rdquo;</b></td><td class="yes">Already solved. A trade login shows each account <b>its own agreed price</b> and nothing is visible to the public or to other customers. No price list exists on the open site.</td></tr>
+        <tr><td><b>&ldquo;I don't want an order arriving without one of my people speaking to the customer&rdquo;</b></td><td class="no">Then Lever 3 comes off the table entirely, and we put that effort into Levers 1, 2 and 4 instead.</td></tr>
+      </table>
+      <p style="margin-top:12px">Both are legitimate positions and we are not going to talk you out of
+      either. But they lead to different plans, and we would rather ask than assume.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">The Sequence</div>
+    <ul class="road">
+      <li><b>Step 1 &mdash; This week.</b> Put measurement on the website. Free, twenty minutes, nothing to buy. It only records from the day it goes on, so every week without it is history you cannot recover.</li>
+      <li><b>Step 2 &mdash; Weeks 1&ndash;3.</b> Stand up the quote list. Every enquiry, every quote, a value and a stage against each, and a prompt when one has gone quiet.</li>
+      <li><b>Step 3 &mdash; Weeks 2&ndash;4.</b> Build the estimating page and an enquiry form that asks what an estimate actually needs &mdash; substrate, area, condition, timescale &mdash; instead of asking for a message.</li>
+      <li><b>Step 4 &mdash; Month 2.</b> Work the back catalogue of past quotes. No new demand, no capacity risk, and it is the fastest revenue in the plan.</li>
+    </ul>
+    <ul class="road road2" style="margin-top:12px">
+      <li><b>Step 5 &mdash; Month 3.</b> First margin review. Which job types, customers and products sit at 50% and which at 20% &mdash; and what that says about what to quote for.</li>
+      <li><b>Step 6 &mdash; Month 3&ndash;4.</b> Specification and CPD pages built, and the brochure library set up so you know which specifier downloaded what, before the tender goes out.</li>
+      <li><b>Step 7 &mdash; Month 4+.</b> The trade counter, <i>only</i> if the answer above allows it and only once the quote data says it is worth it.</li>
+      <li><b>Step 8 &mdash; Ongoing.</b> Named-account coverage of the Northern Ireland contractor, specifier and facilities list.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">How You Would Judge Whether This Is Working</div>
+    <table class="cmp">
+      <tr><th>Measure</th><th>Today</th><th>What good looks like</th></tr>
+      <tr><td><b>Quotes issued, recorded</b></td><td class="no">Not recorded</td><td class="yes">Every one, with a value</td></tr>
+      <tr><td><b>Quotes won, recorded</b></td><td class="no">Not recorded</td><td class="yes">A win rate you can watch move</td></tr>
+      <tr><td><b>Value of quotes outstanding</b></td><td class="no">Unknown at any moment</td><td class="yes">One number, on one screen</td></tr>
+      <tr><td><b>Quotes gone quiet with no follow-up</b></td><td class="no">Invisible</td><td class="yes">Chased before they go cold</td></tr>
+      <tr><td><b>Margin by job type</b></td><td class="no">Not analysed</td><td class="yes">Reviewed monthly, quoted toward</td></tr>
+      <tr><td><b>Counter time on small repeat orders</b></td><td>Not measured</td><td class="yes">Measured, then reduced</td></tr>
+      <tr><td><b>Specifiers downloading your brochures</b></td><td class="no">Anonymous</td><td class="yes">Known, and followed up</td></tr>
+      <tr><td><b>NI addressable market contacted</b></td><td class="no">Not calculated</td><td class="yes">A percentage you can state</td></tr>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">What We Are Deliberately Not Doing</div>
+    <div class="warn">
+      <div class="lab">Said plainly, so there is no confusion later</div>
+      <ul>
+        <li><b>No advertising of any kind.</b> No Google, no Meta, no spend on your behalf.</li>
+        <li><b>No new website.</b> Yours is well built and fast on a phone. Everything here works with it.</li>
+        <li><b>Nothing that touches your stock or accounts systems.</b> Not replaced, not migrated. If a piece of work would require that, we would tell you and stop rather than proceed.</li>
+        <li><b>No selling of coating systems online.</b> Ever. Those stay an enquiry.</li>
+        <li><b>No chasing homeowners.</b> Your customers are contractors, applicators, facilities teams and specifiers.</li>
+        <li><b>No growth past the ceiling you set.</b> You said doubling would be too much. We have planned to &pound;2.5&ndash;3M, not beyond it.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">What We Need From You</div>
+    <ul class="road">
+      <li><b>1.</b> The answer to the pricing question above. It decides whether Lever 3 exists.</li>
+      <li><b>2.</b> Roughly how many jobs you quoted last year, and roughly how many came back.</li>
+      <li><b>3.</b> Your average delivery value &mdash; the ordinary one, not the exceptional one.</li>
+      <li><b>4.</b> What your stock and accounts run on.</li>
+      <li><b>5.</b> Whether trade prices are the same for everyone or agreed account by account.</li>
+      <li><b>6.</b> Roughly how much counter time goes on small repeat orders.</li>
+    </ul>
+    <p class="oppnote">Items 4 and 5 move the cost of the trade counter by several thousand pounds in
+    either direction, which is why <b>we have not put a firm number on it</b>. Item 3 decides how hard
+    the whole target is. None of these are things we can find out from the outside, and we would
+    rather ask than estimate.</p>
+  </div>
+</section>
+
+<div class="cta">
+  <div class="wrap">
+    <h2>The measurement goes on first, and it is free.</h2>
+    <p>Twenty minutes, nothing to buy, no commitment either way. Decide everything else once you can
+    actually see something.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    Prepared by Andrei Givero &middot; AG1 Consulting &middot; 8 September 2026<br><br>
+    For Patterson Protective Coatings Ltd, 347b Albertbridge Road, Belfast BT5 4PY (company NI035851).
+    <b>The turnover, growth target, margin range, market and trading figures referred to in this
+    document were given to us verbally by Alvin and Warren Patterson and have not been independently
+    verified</b> &mdash; turnover is not disclosed in the company's filed accounts. Findings about the
+    website are taken from the accompanying audit, read from the live site on 7 September 2026.
+    <b>No revenue, profit, order volume, quote volume, win rate or return figure is forecast or
+    promised anywhere in this document</b>, and no claim is made about what any work described here
+    would earn. The arithmetic shown is applied to figures you provided and describes what would be
+    required to reach the stated target, not what is predicted to happen. Pricing for any of the work
+    described appears in the separate deliverables and pricing document and remains indicative until
+    the questions above are answered. Brand and company names are used for identification only and
+    belong to their respective owners.
+  </div>
+</footer>
+</body></html>
