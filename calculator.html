@@ -1,0 +1,373 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Patterson — Where Does £500,000 Come From? — AG1</title><style>
+:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--mut:#9aa7b4;--line:#2a3340;--accent:#2f81f7;
+  --good:#3fb950;--bad:#f85149;--gradF:#f85149;--gradD:#e8702a;--gradC:#d29922;--gradB:#3fb950;--gradA:#2ea043;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--mut);font-weight:600}
+header{padding:46px 0 28px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 70% -10%,rgba(47,129,247,.18),transparent)}
+h1{font-size:30px;font-weight:800;margin:10px 0 6px;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:15px}
+.hero{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin:34px 0 8px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+.gradecard{border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center;position:relative;overflow:hidden}
+.gc-F{background:linear-gradient(160deg,#2a1410,#1c2330)}.gc-D{background:linear-gradient(160deg,#2a1c10,#1c2330)}
+.gc-C{background:linear-gradient(160deg,#2a2410,#1c2330)}.gc-B{background:linear-gradient(160deg,#102a1a,#1c2330)}
+.bigletter{font-size:96px;font-weight:900;line-height:1;position:relative}
+.bl-F{color:var(--gradF);text-shadow:0 0 40px rgba(248,81,73,.45)}
+.bl-D{color:var(--gradD);text-shadow:0 0 40px rgba(232,112,42,.45)}
+.bl-C{color:var(--gradC);text-shadow:0 0 40px rgba(210,153,34,.45)}
+.score100{font-size:18px;color:var(--mut);margin-top:6px;position:relative}
+.heroread h2{font-size:21px;font-weight:800;margin-bottom:10px}
+.heroread p{color:var(--mut);font-size:15.5px}
+.heroread .tag{display:inline-block;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--ink);background:var(--panel)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.h{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.rname{font-weight:600;font-size:15px}
+.bar{height:7px;background:#0b0f15;border-radius:99px;margin-top:9px;overflow:hidden}
+.fill{height:100%;border-radius:99px}
+.badge{font-weight:800;font-size:15px;min-width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#0d1117}
+.gF{background:var(--gradF)}.gD{background:var(--gradD)}.gC{background:var(--gradC)}.gB{background:var(--gradB);color:#06210f}.gA{background:var(--gradA);color:#06210f}
+.sc{font-size:12px;color:var(--mut);margin-top:3px}
+.flag{background:linear-gradient(160deg,#2a1410,#161b22);border:1px solid #6f2a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.flag .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--bad);font-weight:700;margin-bottom:8px}
+.win{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.win .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--good);font-weight:700;margin-bottom:8px}
+.warn{background:linear-gradient(160deg,#2a2410,#161b22);border:1px solid #6f5a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.warn .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gradC);font-weight:700;margin-bottom:8px}
+.flag p,.win p,.warn p{color:var(--mut);font-size:14.5px;margin-bottom:9px}
+.flag p:last-child,.win p:last-child,.warn p:last-child{margin-bottom:0}
+.flag b,.win b,.warn b{color:var(--ink)}
+.flag ul,.win ul,.warn ul{margin:0 0 9px 20px;color:var(--mut);font-size:14.5px}
+.flag li,.win li,.warn li{margin-bottom:6px}
+.code{background:#0b0f15;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;line-height:1.85;color:var(--mut);overflow-x:auto}
+.code .ph{color:#ff9d94;font-weight:700}.code .ok{color:#84e0a8;font-weight:700}.code .c{color:#5b6672}
+.cmp{width:100%;border-collapse:collapse;font-size:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.cmp th{text-align:left;padding:11px 14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line);font-weight:700}
+.cmp td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--mut);vertical-align:top}
+.cmp tr:last-child td{border-bottom:none}.cmp td b{color:var(--ink)}.cmp tr.you td{background:#241a12}
+.cmp .yes{color:var(--good);font-weight:700}.cmp .no{color:var(--bad);font-weight:700}
+.opp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.opp{grid-template-columns:1fr}}
+.ocard{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px;text-align:center}
+.ocard .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+.ocard .big{font-size:30px;font-weight:900;color:var(--good);margin:8px 0 2px}
+.ocard .small{font-size:13px;color:var(--mut)}
+.oppnote{color:var(--mut);font-size:14px;margin-top:14px}.oppnote b{color:var(--ink)}
+.arrow{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px 0 2px;flex-wrap:wrap}
+.pill{font-size:60px;font-weight:900;line-height:1}
+.pill.from-F{color:var(--gradF)}.pill.from-D{color:var(--gradD)}.pill.from-C{color:var(--gradC)}
+.pill.to{color:var(--gradA)}
+.pilllab{font-size:12px;color:var(--mut);text-align:center;text-transform:uppercase;letter-spacing:.1em}
+.ar{font-size:34px;color:var(--mut)}
+ul.road{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:760px){ul.road{grid-template-columns:1fr}}
+ul.road li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:11px 14px;font-size:14.5px}
+.road2 li{border-left-color:var(--good)}
+.cta{text-align:center;padding:40px 0 56px}
+.cta h2{font-size:22px;font-weight:800;margin-bottom:8px}
+.cta p{color:var(--mut);font-size:15px}
+footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;line-height:1.7}
+.gscale{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 20px;margin-top:16px}
+.gscale .gtitle{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);font-weight:700;margin-bottom:26px;text-align:center}
+.gtrack{position:relative;height:14px;border-radius:8px;background:linear-gradient(90deg,#f85149 0%,#f85149 18%,#e3833c 34%,#d4a72c 52%,#7ec46a 74%,#3fb950 100%);margin:0 4px}
+.gmark{position:absolute;top:-46px;transform:translateX(-50%);text-align:center;white-space:nowrap}
+.gmark .gm-lab{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);font-weight:700}
+.gmark .gm-val{font-size:19px;font-weight:900;line-height:1.15}
+.gmark:after{content:"";position:absolute;left:50%;top:100%;width:2px;height:22px;transform:translateX(-50%);background:currentColor;opacity:.75}
+.gmark.now{color:var(--bad)}.gmark.now .gm-val{color:var(--bad)}
+.gmark.proj{color:var(--good)}.gmark.proj .gm-val{color:var(--good)}
+.gmark.proj{top:auto;bottom:-52px}
+.gmark.proj:after{top:auto;bottom:100%}
+.gdot{position:absolute;top:50%;width:16px;height:16px;border-radius:50%;transform:translate(-50%,-50%);border:3px solid #0d1117}
+.gdot.now{background:var(--bad)}.gdot.proj{background:var(--good)}
+.gticks{display:flex;justify-content:space-between;margin:66px 4px 0;font-size:11px;letter-spacing:.08em;color:var(--mut);font-weight:700}
+@media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
+</style></head><body>
+<style>
+.calcwrap{display:grid;grid-template-columns:340px 1fr;gap:24px;align-items:start}
+@media(max-width:900px){.calcwrap{grid-template-columns:1fr}}
+.inputs{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px;position:sticky;top:16px}
+@media(max-width:900px){.inputs{position:static}}
+.inputs h3{font-size:16px;margin-bottom:4px;color:var(--ink)}
+.inputs .isub{font-size:13px;color:var(--mut);margin-bottom:18px}
+.fld{margin-bottom:17px}
+.fld label{display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;font-weight:700;color:var(--mut);margin-bottom:6px}
+.fld .valrow{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+.fld .val{font-size:20px;font-weight:800;color:var(--ink);font-variant-numeric:tabular-nums}
+.fld .hintx{font-size:11.5px;color:var(--mut)}
+input[type=range]{width:100%;margin-top:7px;accent-color:var(--accent);background:transparent}
+.bigout{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:14px;margin-bottom:18px}
+.bo{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px;text-align:center}
+.bo.neutral{background:var(--panel);border-color:var(--line)}
+.bo.warnb{background:linear-gradient(160deg,#2a2410,#161b22);border-color:#6f5a1f}
+.bo .lab{font-size:11.5px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);font-weight:700}
+.bo .big{font-size:29px;font-weight:900;color:var(--good);margin:8px 0 2px;font-variant-numeric:tabular-nums}
+.bo.neutral .big{color:var(--ink)}
+.bo.warnb .big{color:var(--gradC)}
+.bo .small{font-size:12.5px;color:var(--mut)}
+.stack{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:18px}
+.stack h3{font-size:16px;margin-bottom:3px;color:var(--ink)}
+.stack .ssub{font-size:13px;color:var(--mut);margin-bottom:18px}
+.lrow{margin-bottom:15px}
+.lrow .lh{display:flex;justify-content:space-between;align-items:baseline;font-size:13.5px;margin-bottom:5px}
+.lrow .lh b{color:var(--ink);font-size:14px}
+.lrow .lh span{color:var(--mut);font-variant-numeric:tabular-nums}
+.track{height:15px;border-radius:8px;background:#0b0f15;overflow:hidden;border:1px solid var(--line)}
+.tf{height:100%;border-radius:8px;transition:width .25s ease}
+.t1{background:linear-gradient(90deg,#2ea043,#3fb950)}
+.t2{background:linear-gradient(90deg,#1f6f9f,#2f81f7)}
+.t3{background:linear-gradient(90deg,#8a6a1a,#d29922)}
+.goalbar{position:relative;height:34px;border-radius:9px;background:#0b0f15;border:1px solid var(--line);overflow:hidden;margin:14px 0 8px}
+.goalfill{height:100%;background:linear-gradient(90deg,#1f6f3a,#3fb950);transition:width .3s ease}
+.goalmark{position:absolute;top:0;bottom:0;width:2px;background:var(--gradC)}
+.goalnote{display:flex;justify-content:space-between;font-size:12px;color:var(--mut);font-variant-numeric:tabular-nums}
+.verdict{border-radius:12px;padding:16px 18px;font-size:14.5px;margin-top:6px;border:1px solid}
+.v-ok{background:#0f2417;border-color:#1f6f3a;color:#a9dcb9}
+.v-mid{background:#2a2410;border-color:#6f5a1f;color:#e2cd93}
+.v-no{background:#2a1410;border-color:#6f2a1f;color:#eab3ad}
+.verdict b{display:block;font-size:15.5px;margin-bottom:5px;color:var(--ink)}
+</style>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Working Model &mdash; Drive It Yourself</div>
+    <h1>Where Does &pound;500,000 Actually Come From?</h1>
+    <div class="sub">Patterson Protective Coatings &middot; 8 September 2026 &middot; AG1 Consulting</div>
+    <p style="color:var(--mut);font-size:15.5px;margin-top:16px;max-width:760px">
+      Every figure below is <b>arithmetic on numbers you type in</b>. Nothing here is a forecast, a
+      projection or a promise &mdash; it is a way of asking <i>what would have to be true</i> for you
+      to reach &pound;2.5M without growing the operation. Change any input and everything moves.
+    </p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="calcwrap">
+
+      <div class="inputs">
+        <h3>Your numbers</h3>
+        <div class="isub">Rough is fine. Nothing is saved or sent.</div>
+
+        <div class="fld">
+          <label for="rev">Turnover today</label>
+          <div class="valrow"><span class="val" id="revV">&pound;2.0M</span><span class="hintx">you said ~&pound;2M</span></div>
+          <input type="range" id="rev" min="1000000" max="4000000" step="50000" value="2000000">
+        </div>
+
+        <div class="fld">
+          <label for="goal">Target turnover</label>
+          <div class="valrow"><span class="val" id="goalV">&pound;2.5M</span><span class="hintx">you said &pound;2.5&ndash;3M</span></div>
+          <input type="range" id="goal" min="2000000" max="4000000" step="50000" value="2500000">
+        </div>
+
+        <div class="fld">
+          <label for="adv">Average delivery value</label>
+          <div class="valrow"><span class="val" id="advV">&pound;8,000</span><span class="hintx">the ordinary job</span></div>
+          <input type="range" id="adv" min="500" max="50000" step="500" value="8000">
+        </div>
+
+        <div class="fld">
+          <label for="quotes">Quotes issued a year</label>
+          <div class="valrow"><span class="val" id="quotesV">400</span><span class="hintx">roughly</span></div>
+          <input type="range" id="quotes" min="50" max="2000" step="10" value="400">
+        </div>
+
+        <div class="fld">
+          <label for="win">Of those, how many you win</label>
+          <div class="valrow"><span class="val" id="winV">55%</span><span class="hintx">your win rate</span></div>
+          <input type="range" id="win" min="10" max="95" step="1" value="55">
+        </div>
+
+        <div class="fld">
+          <label for="silent">Lost to silence, not to price</label>
+          <div class="valrow"><span class="val" id="silentV">30%</span><span class="hintx">of the ones you lost</span></div>
+          <input type="range" id="silent" min="0" max="80" step="1" value="30">
+        </div>
+
+        <div class="fld">
+          <label for="recover">Of those, share you could recover</label>
+          <div class="valrow"><span class="val" id="recoverV">25%</span><span class="hintx">by following up</span></div>
+          <input type="range" id="recover" min="0" max="60" step="1" value="25">
+        </div>
+
+        <div class="fld">
+          <label for="mixshift">Jobs shifted to the high-margin end</label>
+          <div class="valrow"><span class="val" id="mixshiftV">10%</span><span class="hintx">20% &rarr; 50% margin</span></div>
+          <input type="range" id="mixshift" min="0" max="40" step="1" value="10">
+        </div>
+
+        <div class="fld">
+          <label for="counter">Counter hours a week on small repeat orders</label>
+          <div class="valrow"><span class="val" id="counterV">8 hrs</span><span class="hintx">time freed for estimating</span></div>
+          <input type="range" id="counter" min="0" max="40" step="1" value="8">
+        </div>
+      </div>
+
+      <div>
+        <div class="bigout">
+          <div class="bo neutral"><div class="lab">The gap to close</div><div class="big" id="gapV">&pound;500,000</div><div class="small" id="gapPct">25% more than today</div></div>
+          <div class="bo"><div class="lab">Extra orders needed</div><div class="big" id="jobsV">63</div><div class="small">more won quotes a year</div></div>
+          <div class="bo warnb"><div class="lab">That is per week</div><div class="big" id="weekV">1.2</div><div class="small">additional orders a week</div></div>
+        </div>
+
+        <div class="stack">
+          <h3>Where it could come from</h3>
+          <div class="ssub">Three levers, none of which requires a single new customer.</div>
+
+          <div class="lrow">
+            <div class="lh"><b>1 &middot; Quotes you already lost to silence</b><span id="l1V">&pound;0</span></div>
+            <div class="track"><div class="tf t1" id="l1B" style="width:0%"></div></div>
+          </div>
+
+          <div class="lrow">
+            <div class="lh"><b>2 &middot; Shifting the margin mix</b><span id="l2V">&pound;0 profit</span></div>
+            <div class="track"><div class="tf t2" id="l2B" style="width:0%"></div></div>
+          </div>
+
+          <div class="lrow">
+            <div class="lh"><b>3 &middot; Counter time returned to estimating</b><span id="l3V">0 hrs/yr</span></div>
+            <div class="track"><div class="tf t3" id="l3B" style="width:0%"></div></div>
+          </div>
+
+          <div style="margin-top:22px">
+            <div class="lh" style="display:flex;justify-content:space-between;font-size:13.5px;margin-bottom:4px">
+              <b style="color:var(--ink);font-size:14px">Progress toward the target</b>
+              <span style="color:var(--mut)" id="coverV">0%</span>
+            </div>
+            <div class="goalbar"><div class="goalfill" id="goalFill" style="width:0%"></div></div>
+            <div class="goalnote"><span id="fromV">&pound;2.0M today</span><span id="toV">&pound;2.5M target</span></div>
+          </div>
+
+          <div class="verdict v-mid" id="verdict"><b>Set your numbers</b>Move the sliders on the left to your own figures.</div>
+        </div>
+
+        <div class="warn">
+          <div class="lab">What this model does not do</div>
+          <p>It does not predict that you will recover any quote, win any job or earn any pound. It
+          takes figures you supply and shows what would have to be true to close the gap you set.
+          <b>The recovery rate and the margin shift are assumptions you choose</b>, not rates we have
+          measured for your business &mdash; because nothing in your business currently records them.
+          That is precisely the problem the plan is built to fix.</p>
+          <p>The counter-time figure is shown as hours returned, deliberately <b>not</b> converted into
+          money. What an extra estimating hour is worth depends on your margins and your close rate,
+          and we are not going to invent that number.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="cta">
+  <div class="wrap">
+    <h2>These are the four numbers we do not have.</h2>
+    <p>Average delivery value, quotes issued, quotes won, and counter time. With those, this stops
+    being a model and starts being your business.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    Prepared by Andrei Givero &middot; AG1 Consulting &middot; 8 September 2026<br><br>
+    For Patterson Protective Coatings Ltd, 347b Albertbridge Road, Belfast BT5 4PY (company NI035851).
+    <b>This page is an interactive arithmetic model, not a forecast, projection, quotation or offer.</b>
+    All outputs are calculated live from values entered by the user and no figure on it is predicted,
+    promised or represented as achievable. The default values shown on load are illustrative placeholders
+    chosen to demonstrate the model and are <b>not</b> estimates of Patterson Protective Coatings'
+    actual quote volume, win rate, average order value or margin &mdash; the only figures supplied by
+    the company are turnover of approximately &pound;2M, a target of &pound;2.5&ndash;3M and a margin
+    range of 20&ndash;50%, all given verbally and not independently verified. Turnover is not disclosed
+    in the company's filed accounts. Nothing entered on this page is stored, transmitted or recorded.
+  </div>
+</footer>
+
+<script>
+(function(){
+  var ids=['rev','goal','adv','quotes','win','silent','recover','mixshift','counter'];
+  function $(i){return document.getElementById(i)}
+  function money(n){
+    n=Math.round(n);
+    if(Math.abs(n)>=1000000) return '£'+(n/1000000).toFixed(2).replace(/\.00$/,'')+'M';
+    return '£'+n.toLocaleString('en-GB');
+  }
+  function calc(){
+    var rev=+$('rev').value, goal=+$('goal').value, adv=+$('adv').value,
+        q=+$('quotes').value, win=+$('win').value/100, silent=+$('silent').value/100,
+        rec=+$('recover').value/100, shift=+$('mixshift').value/100, ch=+$('counter').value;
+
+    $('revV').textContent=money(rev);
+    $('goalV').textContent=money(goal);
+    $('advV').textContent=money(adv);
+    $('quotesV').textContent=q;
+    $('winV').textContent=Math.round(win*100)+'%';
+    $('silentV').textContent=Math.round(silent*100)+'%';
+    $('recoverV').textContent=Math.round(rec*100)+'%';
+    $('mixshiftV').textContent=Math.round(shift*100)+'%';
+    $('counterV').textContent=ch+' hrs';
+
+    var gap=Math.max(0,goal-rev);
+    var jobs=adv>0?Math.ceil(gap/adv):0;
+    $('gapV').textContent=money(gap);
+    $('gapPct').textContent=rev>0?(Math.round((gap/rev)*100)+'% more than today'):'—';
+    $('jobsV').textContent=jobs.toLocaleString('en-GB');
+    $('weekV').textContent=(jobs/48).toFixed(1);
+
+    // lever 1: quotes lost to silence, recovered
+    var lost=q*(1-win);
+    var silentLost=lost*silent;
+    var recovered=silentLost*rec;
+    var l1=recovered*adv;
+
+    // lever 2: margin shift on won jobs -> extra GROSS PROFIT (not revenue)
+    var won=q*win;
+    var shifted=won*shift;
+    var l2=shifted*adv*0.30; // 20% -> 50% margin = +30 points
+
+    // lever 3: hours returned
+    var l3=ch*48;
+
+    $('l1V').textContent=money(l1)+' revenue';
+    $('l2V').textContent=money(l2)+' profit';
+    $('l3V').textContent=l3.toLocaleString('en-GB')+' hrs/yr';
+
+    var maxb=Math.max(l1,l2,1);
+    $('l1B').style.width=Math.min(100,(l1/maxb)*100)+'%';
+    $('l2B').style.width=Math.min(100,(l2/maxb)*100)+'%';
+    $('l3B').style.width=Math.min(100,(ch/40)*100)+'%';
+
+    var cover=gap>0?Math.min(100,(l1/gap)*100):100;
+    $('goalFill').style.width=cover+'%';
+    $('coverV').textContent=Math.round(cover)+'% of the gap, from lever 1 alone';
+    $('fromV').textContent=money(rev)+' today';
+    $('toV').textContent=money(goal)+' target';
+
+    var v=$('verdict');
+    if(gap<=0){
+      v.className='verdict v-ok';
+      v.innerHTML='<b>You are already at the target.</b>Set a higher target to model the next step.';
+    } else if(cover>=100){
+      v.className='verdict v-ok';
+      v.innerHTML='<b>Following up lost quotes covers the whole gap on its own.</b>On these numbers you would not need a single new customer, or one extra hour of installed capacity, to reach '+money(goal)+'. Everything else is upside.';
+    } else if(cover>=50){
+      v.className='verdict v-ok';
+      v.innerHTML='<b>Lost quotes cover '+Math.round(cover)+'% of the gap.</b>The rest comes from the margin mix and from the counter hours you get back — neither of which needs a new customer either.';
+    } else if(cover>=20){
+      v.className='verdict v-mid';
+      v.innerHTML='<b>Lost quotes cover '+Math.round(cover)+'% of the gap.</b>Meaningful, but not the whole answer on these numbers. The margin mix becomes the bigger lever — which is exactly the thing nothing currently measures.';
+    } else {
+      v.className='verdict v-no';
+      v.innerHTML='<b>Follow-up alone will not close this gap.</b>On these numbers the target needs the margin mix and the counter capacity, not just better chasing. Worth knowing before anybody spends a pound.';
+    }
+  }
+  ids.forEach(function(i){$(i).addEventListener('input',calc)});
+  calc();
+})();
+</script>
+</body></html>
