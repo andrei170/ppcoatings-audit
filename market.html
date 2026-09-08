@@ -1,0 +1,276 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Patterson — The Northern Ireland Market, Counted — AG1</title><style>
+:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--mut:#9aa7b4;--line:#2a3340;--accent:#2f81f7;
+  --good:#3fb950;--bad:#f85149;--gradF:#f85149;--gradD:#e8702a;--gradC:#d29922;--gradB:#3fb950;--gradA:#2ea043;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--mut);font-weight:600}
+header{padding:46px 0 28px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 70% -10%,rgba(47,129,247,.18),transparent)}
+h1{font-size:30px;font-weight:800;margin:10px 0 6px;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:15px}
+.hero{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin:34px 0 8px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+.gradecard{border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center;position:relative;overflow:hidden}
+.gc-F{background:linear-gradient(160deg,#2a1410,#1c2330)}.gc-D{background:linear-gradient(160deg,#2a1c10,#1c2330)}
+.gc-C{background:linear-gradient(160deg,#2a2410,#1c2330)}.gc-B{background:linear-gradient(160deg,#102a1a,#1c2330)}
+.bigletter{font-size:96px;font-weight:900;line-height:1;position:relative}
+.bl-F{color:var(--gradF);text-shadow:0 0 40px rgba(248,81,73,.45)}
+.bl-D{color:var(--gradD);text-shadow:0 0 40px rgba(232,112,42,.45)}
+.bl-C{color:var(--gradC);text-shadow:0 0 40px rgba(210,153,34,.45)}
+.score100{font-size:18px;color:var(--mut);margin-top:6px;position:relative}
+.heroread h2{font-size:21px;font-weight:800;margin-bottom:10px}
+.heroread p{color:var(--mut);font-size:15.5px}
+.heroread .tag{display:inline-block;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--ink);background:var(--panel)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.h{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.rname{font-weight:600;font-size:15px}
+.bar{height:7px;background:#0b0f15;border-radius:99px;margin-top:9px;overflow:hidden}
+.fill{height:100%;border-radius:99px}
+.badge{font-weight:800;font-size:15px;min-width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#0d1117}
+.gF{background:var(--gradF)}.gD{background:var(--gradD)}.gC{background:var(--gradC)}.gB{background:var(--gradB);color:#06210f}.gA{background:var(--gradA);color:#06210f}
+.sc{font-size:12px;color:var(--mut);margin-top:3px}
+.flag{background:linear-gradient(160deg,#2a1410,#161b22);border:1px solid #6f2a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.flag .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--bad);font-weight:700;margin-bottom:8px}
+.win{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.win .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--good);font-weight:700;margin-bottom:8px}
+.warn{background:linear-gradient(160deg,#2a2410,#161b22);border:1px solid #6f5a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.warn .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gradC);font-weight:700;margin-bottom:8px}
+.flag p,.win p,.warn p{color:var(--mut);font-size:14.5px;margin-bottom:9px}
+.flag p:last-child,.win p:last-child,.warn p:last-child{margin-bottom:0}
+.flag b,.win b,.warn b{color:var(--ink)}
+.flag ul,.win ul,.warn ul{margin:0 0 9px 20px;color:var(--mut);font-size:14.5px}
+.flag li,.win li,.warn li{margin-bottom:6px}
+.code{background:#0b0f15;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;line-height:1.85;color:var(--mut);overflow-x:auto}
+.code .ph{color:#ff9d94;font-weight:700}.code .ok{color:#84e0a8;font-weight:700}.code .c{color:#5b6672}
+.cmp{width:100%;border-collapse:collapse;font-size:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.cmp th{text-align:left;padding:11px 14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line);font-weight:700}
+.cmp td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--mut);vertical-align:top}
+.cmp tr:last-child td{border-bottom:none}.cmp td b{color:var(--ink)}.cmp tr.you td{background:#241a12}
+.cmp .yes{color:var(--good);font-weight:700}.cmp .no{color:var(--bad);font-weight:700}
+.opp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.opp{grid-template-columns:1fr}}
+.ocard{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px;text-align:center}
+.ocard .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+.ocard .big{font-size:30px;font-weight:900;color:var(--good);margin:8px 0 2px}
+.ocard .small{font-size:13px;color:var(--mut)}
+.oppnote{color:var(--mut);font-size:14px;margin-top:14px}.oppnote b{color:var(--ink)}
+.arrow{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px 0 2px;flex-wrap:wrap}
+.pill{font-size:60px;font-weight:900;line-height:1}
+.pill.from-F{color:var(--gradF)}.pill.from-D{color:var(--gradD)}.pill.from-C{color:var(--gradC)}
+.pill.to{color:var(--gradA)}
+.pilllab{font-size:12px;color:var(--mut);text-align:center;text-transform:uppercase;letter-spacing:.1em}
+.ar{font-size:34px;color:var(--mut)}
+ul.road{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:760px){ul.road{grid-template-columns:1fr}}
+ul.road li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:11px 14px;font-size:14.5px}
+.road2 li{border-left-color:var(--good)}
+.cta{text-align:center;padding:40px 0 56px}
+.cta h2{font-size:22px;font-weight:800;margin-bottom:8px}
+.cta p{color:var(--mut);font-size:15px}
+footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;line-height:1.7}
+.gscale{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 20px;margin-top:16px}
+.gscale .gtitle{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);font-weight:700;margin-bottom:26px;text-align:center}
+.gtrack{position:relative;height:14px;border-radius:8px;background:linear-gradient(90deg,#f85149 0%,#f85149 18%,#e3833c 34%,#d4a72c 52%,#7ec46a 74%,#3fb950 100%);margin:0 4px}
+.gmark{position:absolute;top:-46px;transform:translateX(-50%);text-align:center;white-space:nowrap}
+.gmark .gm-lab{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);font-weight:700}
+.gmark .gm-val{font-size:19px;font-weight:900;line-height:1.15}
+.gmark:after{content:"";position:absolute;left:50%;top:100%;width:2px;height:22px;transform:translateX(-50%);background:currentColor;opacity:.75}
+.gmark.now{color:var(--bad)}.gmark.now .gm-val{color:var(--bad)}
+.gmark.proj{color:var(--good)}.gmark.proj .gm-val{color:var(--good)}
+.gmark.proj{top:auto;bottom:-52px}
+.gmark.proj:after{top:auto;bottom:100%}
+.gdot{position:absolute;top:50%;width:16px;height:16px;border-radius:50%;transform:translate(-50%,-50%);border:3px solid #0d1117}
+.gdot.now{background:var(--bad)}.gdot.proj{background:var(--good)}
+.gticks{display:flex;justify-content:space-between;margin:66px 4px 0;font-size:11px;letter-spacing:.08em;color:var(--mut);font-weight:700}
+@media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
+</style></head><body>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Market Sheet &mdash; Northern Ireland</div>
+    <h1>The Market You Sell Into, Counted</h1>
+    <div class="sub">Patterson Protective Coatings Ltd &middot; 8 September 2026 &middot; AG1 Consulting</div>
+
+    <div class="hero">
+      <div class="gradecard gc-C">
+        <div class="bigletter bl-C" style="font-size:56px">&pound;4.9<span style="font-size:26px">bn</span></div>
+        <div class="score100">NI construction output, 2025/26</div>
+      </div>
+      <div class="heroread">
+        <h2>Your market is at a fifteen-year high, and it is small enough to write down by name.</h2>
+        <p>Northern Ireland construction output reached <b>&pound;4.9 billion</b> in 2025/26, up
+        <b>4.3%</b> in a year, with quarterly output hitting a <b>fifteen-year high</b>. The number of
+        construction businesses in Northern Ireland rose to <b>11,785</b> &mdash; the highest since
+        records began in 2010.</p>
+        <p>Every figure on this page comes from official statistics, and every one is sourced at the
+        bottom. <b>Nothing here is estimated by us.</b></p>
+        <div class="tag">NISRA &middot; Department for the Economy &middot; RSUA</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="h">The Market In Numbers</div>
+    <div class="grid">
+      <div class="row"><div><div class="rname">NI construction output, 2025/26</div><div class="sc">Up 4.3% on the year &mdash; NISRA</div></div><div class="badge gA">&pound;4.9bn</div></div>
+      <div class="row"><div><div class="rname">Construction businesses in NI</div><div class="sc">Year to March 2026, up 2.7% &mdash; highest since records began 2010</div></div><div class="badge gA">11,785</div></div>
+      <div class="row"><div><div class="rname">Quarterly construction output</div><div class="sc">A fifteen-year high, reported March 2026</div></div><div class="badge gA">15-yr high</div></div>
+      <div class="row"><div><div class="rname">Chartered architects in NI</div><div class="sc">RSUA membership &mdash; the people who write specifications</div></div><div class="badge gB">1,000+</div></div>
+      <div class="row"><div><div class="rname">NI architectural practices in the RSUA scheme</div><div class="sc">A countable, contactable list</div></div><div class="badge gB">70&ndash;80</div></div>
+      <div class="row"><div><div class="rname">All VAT/PAYE-registered NI businesses</div><div class="sc">Growth described as construction-led</div></div><div class="badge gB">82,680</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Who Of That Is Actually Yours &mdash; Honestly</div>
+    <div class="warn">
+      <div class="lab">11,785 is the industry, not your prospect list</div>
+      <p>That figure counts every construction business in Northern Ireland, from one-man
+      subcontractors to the largest main contractors. <b>Most of them will never buy a protective
+      coating system</b>, and we are not going to pretend otherwise or multiply it by an average order
+      value to produce an impressive number.</p>
+      <p>What matters is that the set which <i>does</i> buy &mdash; commercial and industrial
+      contractors, applicators, facilities and estates teams, and the specifiers who write the
+      documents &mdash; is a subset of a market that is itself only twelve thousand firms. <b>That is
+      small enough to enumerate</b>, and that is the whole strategic point.</p>
+    </div>
+    <table class="cmp">
+      <tr><th>Who</th><th>What they do for you</th><th>Reachable how</th></tr>
+      <tr><td><b>Commercial &amp; industrial contractors</b></td><td>Buy the material against a specification</td><td>Named list &middot; already ring the counter</td></tr>
+      <tr><td><b>Applicators &amp; specialist sprayers</b></td><td>Repeat trade buyers, highest frequency</td><td>Named list &middot; mostly known to you</td></tr>
+      <tr><td><b>Facilities &amp; estates managers</b></td><td>Commission surveys on buildings they own</td><td class="yes">Search &mdash; and not currently reached</td></tr>
+      <tr><td><b>Architects &amp; specifiers</b></td><td class="yes">Write your system into the document</td><td class="yes">CPD &middot; 70&ndash;80 practices, 1,000+ architects</td></tr>
+      <tr><td><b>Structural &amp; building services engineers</b></td><td>Specify intumescent and corrosion systems</td><td class="yes">CPD &middot; named practices</td></tr>
+      <tr><td><b>Councils &amp; housing associations</b></td><td>Large planned maintenance programmes</td><td>Framework &amp; tender routes &mdash; not assessed</td></tr>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Why A Small Market Is An Advantage Here</div>
+    <div class="win">
+      <div class="lab">You can know your own market share</div>
+      <p>In a market of this size, <b>coverage replaces advertising</b>. You do not need to pay to be
+      found by people you could write to, ring, or present a CPD to &mdash; because the list of them
+      is finite and can be built.</p>
+      <p>It also means you can answer a question almost no business can: <b>what percentage of every
+      organisation in this country that could buy from us have we actually spoken to?</b> That is a
+      real number here, and it is not a real number in England.</p>
+    </div>
+    <div class="win">
+      <div class="lab">And the specifier route multiplies</div>
+      <p>There are <b>1,000+ chartered architects</b> in Northern Ireland and <b>70&ndash;80 practices</b>
+      in the RSUA scheme. That is not an audience &mdash; it is a list you could work through
+      deliberately.</p>
+      <p>And each one is worth more than a contractor, because a specifier writing your system into a
+      document sends <b>every contractor bidding that job</b> to you. You are paid regardless of which
+      one wins.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">The Timing Argument</div>
+    <div class="flag">
+      <div class="lab">This is the strongest market moment in fifteen years</div>
+      <p>Output at a fifteen-year quarterly high. Business numbers at their highest since records
+      began in 2010. Total output up 4.3% in a year to &pound;4.9 billion, with growth across the wider
+      economy described as construction-led.</p>
+      <p><b>New build and refurbishment both generate coating specifications.</b> More buildings going
+      up and more being refurbished means more steel to protect, more floors to coat and more
+      intumescent work to specify.</p>
+      <p>The argument is not that the market will stay like this. It is that <b>the ground is
+      uncontested right now</b> &mdash; not one of your five competitors offers a survey or a
+      specification, and only one of the six is buying search at all. A rising market with no
+      competitor claiming the high-value service is not a permanent condition.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Who Is Competing For It</div>
+    <table class="cmp">
+      <tr><th>Firm</th><th>Where</th><th>Buying search</th><th>Offers a specification</th></tr>
+      <tr class="you"><td><b>Patterson Protective Coatings</b> You</td><td>Belfast</td><td class="no">No</td><td class="no">You do it &mdash; but not on the website</td></tr>
+      <tr><td><b>Barron &amp; Brennan</b></td><td>Belfast</td><td class="no">No</td><td class="no">No</td></tr>
+      <tr><td><b>IPC Coatings</b></td><td>Ireland &amp; NI</td><td class="no">No</td><td class="no">No</td></tr>
+      <tr><td><b>Promain Paints</b></td><td>England</td><td class="no">No tag found</td><td class="no">No</td></tr>
+      <tr><td><b>Rawlins Paints</b></td><td>England</td><td class="no">No tag found</td><td class="no">No</td></tr>
+      <tr><td><b>Industrial Coatings Ltd</b></td><td>England</td><td class="yes">Yes</td><td class="no">No</td></tr>
+    </table>
+    <div class="opp" style="margin-top:16px">
+      <div class="ocard"><div class="lab">Rivals offering a specification</div><div class="big">0 of 5</div><div class="small">the ground nobody has taken</div></div>
+      <div class="ocard"><div class="lab">Rivals buying search</div><div class="big">1 of 5</div><div class="small">and they are in England, selling on price</div></div>
+      <div class="ocard"><div class="lab">NI rivals advertising</div><div class="big">0 of 2</div><div class="small">neither local firm is bidding at all</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">What We Still Do Not Know</div>
+    <div class="warn">
+      <div class="lab">Named honestly, because it is the go/no-go</div>
+      <p><b>How often Northern Ireland actually searches for these terms.</b> A market being large and
+      growing does not mean people type &ldquo;protective coating specification&rdquo; into Google. The
+      two are different questions and only one of them is answered on this page.</p>
+      <p>That figure comes from Google's Keyword Planner against your region, it costs nothing, and it
+      is the first thing we would pull. <b>If the searches are not there, the paid campaigns come off
+      the table and the CPD route to the 70&ndash;80 practices becomes the plan instead</b> &mdash;
+      which needs no media budget at all.</p>
+      <p>Also not assessed: the council and housing association framework routes, the size of the
+      refurbishment market specifically against new build, and how much of the &pound;4.9bn involves
+      coatings at all. <b>We have not estimated any of them and we are not going to.</b></p>
+    </div>
+  </div>
+</section>
+
+<div class="cta">
+  <div class="wrap">
+    <h2>A rising market, and nobody claiming the thing you are best at.</h2>
+    <p>The next step costs nothing: pull the real Northern Ireland search volumes and find out whether
+    the demand is searchable or whether it has to be reached practice by practice.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    Prepared by Andrei Givero &middot; AG1 Consulting &middot; 8 September 2026<br><br>
+    <b>Sources for every figure on this page:</b><br>
+    Northern Ireland construction output of &pound;4.9bn in 2025/26 and annual growth of 4.3%:
+    NISRA construction output statistics, as reported by the News Letter
+    (newsletter.co.uk) and NISRA (nisra.gov.uk/statistics/economic-output/construction-output-statistics).
+    Quarterly output at a fifteen-year high: Construction News, 27 March 2026
+    (constructionnews.co.uk). Construction businesses in Northern Ireland at 11,785 in the year to
+    March 2026, up 2.7% and the highest since records began in 2010, and the total of 82,680
+    VAT/PAYE-registered businesses: Northern Ireland Inter-Departmental Business Register Statistics
+    2026, Department for the Economy (economy-ni.gov.uk). Chartered architect membership of over 1,000
+    and 70&ndash;80 practices in the Practice Services Scheme: Royal Society of Ulster Architects
+    (rsua.org.uk).<br><br>
+    For Patterson Protective Coatings Ltd, 347b Albertbridge Road, Belfast BT5 4PY (company NI035851).
+    <b>The official statistics quoted describe the Northern Ireland construction industry as a whole
+    and are not a measure of demand for protective coatings, nor of Patterson Protective Coatings'
+    addressable market.</b> No attempt is made anywhere on this page to estimate the value of the
+    coatings market, Patterson's share of it, or the revenue any activity described here would
+    produce, and no such figure should be inferred from the industry totals shown.
+    <b>No search volume, cost per click, budget or return figure appears on this page</b>, because
+    none has been measured. Competitor findings are taken from the accompanying competitor analysis,
+    read from each firm's own served page source on 7 September 2026; &ldquo;no tag found&rdquo; means
+    no tag was seen in the page we read, and a tag fired through a container or injected later by
+    script would not always appear. The Inter-Departmental Business Register excludes businesses
+    below the VAT threshold that do not operate a PAYE scheme. Brand and company names are used for
+    identification only and belong to their respective owners.
+  </div>
+</footer>
+</body></html>
