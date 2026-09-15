@@ -89,106 +89,207 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
 .gticks{display:flex;justify-content:space-between;margin:66px 4px 0;font-size:11px;letter-spacing:.08em;color:var(--mut);font-weight:700}
 @media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
 </style></head><body>
+<style>
+.tiers{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media(max-width:820px){.tiers{grid-template-columns:1fr}}
+.tier{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px 20px;display:flex;flex-direction:column}
+.tier.rec{border:2px solid var(--accent);background:linear-gradient(160deg,#10203a,#161b22)}
+.tier .tname{font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:var(--mut);font-weight:700}
+.tier.rec .tname{color:var(--accent)}
+.tier h3{font-size:20px;margin:6px 0 4px}
+.tier .price{font-size:26px;font-weight:900;margin:8px 0 2px}
+.tier .per{font-size:13px;color:var(--mut);margin-bottom:12px}
+.tier ul{list-style:none;margin:0;padding:0}
+.tier li{font-size:14.5px;color:var(--mut);padding:7px 0 7px 24px;border-top:1px solid var(--line);position:relative}
+.tier li:before{content:"\2713";position:absolute;left:0;color:var(--good);font-weight:800}
+.tier li b{color:var(--ink)}
+.tier .when{margin-top:auto;padding-top:14px;font-size:13.5px;color:var(--ink)}
+.ribbon{display:inline-block;background:var(--accent);color:#fff;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;border-radius:999px;padding:4px 10px;margin-bottom:10px;align-self:flex-start}
+.quote{border-left:3px solid var(--accent);padding:4px 0 4px 16px;color:var(--mut);font-style:italic;font-size:15px;margin:12px 0}
+</style>
+
 <header>
   <div class="wrap">
-    <div class="eyebrow">Deliverables &amp; Pricing</div>
-    <h1>Patterson Protective Coatings &mdash; What You Get</h1>
-    <div class="sub">Prepared for the Patterson family &middot; 7 September 2026 &middot; AG1 Consulting</div>
+    <div class="eyebrow">Deliverables &amp; Pricing &middot; Patterson Protective Coatings &middot; Belfast</div>
+    <h1>Two Pieces Of Work, In Order: Keep Every Quote, Then Bring In The Specified Ones.</h1>
+    <div class="sub">Prepared for Warren Patterson &middot; updated 15 September 2026, following our call of 14 September &middot; AG1 Consulting</div>
+
+    <div class="hero">
+      <div class="gradecard gc-B">
+        <div class="bigletter" style="font-size:52px;color:var(--good)">A &rarr; B</div>
+        <div class="score100">the system first &middot; paid search only from week five</div>
+      </div>
+      <div class="heroread">
+        <h2>You put it better than we did: "a system that systemises it and makes us follow up and act upon it &mdash; and then supported by pay-per-click advertising. Essentially, that's the two things."</h2>
+        <p>So this page prices exactly those two things, separately, so you can see what is a one-off project,
+        what is a monthly commitment, and what is advertising money that goes straight to Google.</p>
+        <div class="tag">All figures GBP, excluding VAT &middot; the trade counter is priced separately, for later</div>
+      </div>
+    </div>
   </div>
 </header>
 
-<div class="wrap">
+<section>
+  <div class="wrap">
+    <div class="h">What You Told Us On 14 September That Shapes This</div>
+    <ul class="road">
+      <li><b>The constraint is storage space, not phone calls</b> &mdash; and a new building is underway. So we do
+      not add volume; we add the right jobs.</li>
+      <li><b>Big projects ship straight to site.</b> "Bigger doesn't always mean that we have to handle it." That is
+      why Track B goes after fewer, larger, specified jobs.</li>
+      <li><b>The best margin is niche, specified, site-specific work</b> &mdash; the church or listed building where
+      the colour is matched and signed off and nobody wants to change it.</li>
+      <li><b>Northern Ireland only.</b> No advertising shown in Great Britain.</li>
+      <li><b>Each regular account has its own price card.</b> That matters for the trade counter, later.</li>
+      <li><b>"I don't need eureka, I just need something that's going to improve where we are."</b></li>
+    </ul>
+  </div>
+</section>
 
-  <section>
-    <div class="h">The Quote System</div>
-    <div class="win">
-      <div class="lab">One setup, one monthly fee &mdash; this is the recommendation</div>
-      <p><b>&pound;2,250 &ndash; &pound;4,500 to set up &middot; &pound;400 &ndash; &pound;900 a month</b></p>
-      <p style="margin-bottom:14px">Everything that answers the question you cannot currently answer:
-      <b>how many jobs did we quote, and how many came back?</b></p>
+<section>
+  <div class="wrap">
+    <div class="h">The Two Tracks</div>
+    <div class="tiers">
+      <div class="tier rec">
+        <span class="ribbon">Starts week one</span>
+        <div class="tname">Track A</div>
+        <h3>The Quote System</h3>
+        <div class="price">&pound;2,250 &ndash; &pound;4,500</div>
+        <div class="per">to set up &middot; then &pound;400 &ndash; &pound;900 a month</div>
+        <ul>
+          <li><b>A list of every job you quote</b>, with a stage on each &mdash; enquiry, survey, quote sent, chasing, won, lost</li>
+          <li><b>The value on every quote</b>, so you can see what is out at any moment</li>
+          <li><b>An automatic chase</b> &mdash; when a quote has sat unanswered for a fortnight, the system tells somebody to ring</li>
+          <li><b>The estimate page</b> on your existing website &mdash; what are you coating, how big, what condition, when</li>
+          <li><b>Enquiries land straight on the list</b>, from the website and the phone, with a text alert</li>
+          <li><b>The back catalogue</b> &mdash; old quotes that never heard back, loaded and worked through</li>
+          <li><b>Brochure and data-sheet tracking</b> &mdash; which specifier downloaded what</li>
+          <li><b>Website measurement installed</b> &mdash; free, whatever else you decide</li>
+          <li><b>Training for your team</b>, and a monthly review: quotes issued, value out, won, lost, gone quiet</li>
+        </ul>
+        <div class="when">Hosted in your own system if it can do it, or in ours (GoHighLevel). Private to you &mdash; customers never see it.</div>
+      </div>
+
+      <div class="tier">
+        <span class="ribbon" style="background:var(--good)">From week five &mdash; only if the data says so</span>
+        <div class="tname">Track B</div>
+        <h3>Specification-Led Paid Search, Northern Ireland Only</h3>
+        <div class="price">&pound;3,000 a month</div>
+        <div class="per">&pound;1,500 our management &middot; &pound;1,500 paid straight to Google as ad spend</div>
+        <ul>
+          <li><b>A free keyword report first</b> &mdash; what people in Northern Ireland actually search for, before a penny is spent</li>
+          <li><b>Campaign 1 &mdash; Specification &amp; survey</b>: aimed at the people writing the spec, not the person buying 20 litres</li>
+          <li><b>Campaign 2 &mdash; Competitor displacement</b>: shown when someone searches a competitor's name</li>
+          <li><b>Campaign 3 &mdash; CPD for practices</b>: architects and engineers booking a presentation in their office</li>
+          <li><b>Geo-restricted to Northern Ireland</b> &mdash; nobody in Glasgow or Manchester sees it</li>
+          <li><b>Judged on surveys booked and specifications written</b>, not clicks. Anything not producing gets switched off</li>
+          <li><b>Month to month.</b> Stop it whenever you like</li>
+        </ul>
+        <div class="when">Does not start until Track A is running, so every enquiry it brings in is caught and chased.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">How The Google Budget Actually Works &mdash; A Correction</div>
+    <div class="warn">
+      <div class="lab">You asked whether an unspent daily budget rolls over. We said yes. The accurate answer:</div>
       <ul>
-        <li><b>A list of every job you have quoted</b>, with a stage against each one &mdash; enquiry, site survey, quote sent, chasing, won, lost</li>
-        <li><b>The value on every quote</b>, so you can see what is out at any moment</li>
-        <li><b>An automatic chase</b> when a quote has gone quiet, so nothing is lost by being forgotten</li>
-        <li><b>An estimating page on your website</b> that says plainly you work out systems, quantities and coverage</li>
-        <li><b>An enquiry form that asks what an estimate needs</b> &mdash; what is being coated, how big, what condition, when it starts &mdash; instead of asking for a message</li>
-        <li><b>Enquiries land straight on the list</b>, from the website and from the phone</li>
-        <li><b>Website measurement installed</b> &mdash; which brands and categories people come looking for</li>
-        <li><b>A monthly report</b>: quotes issued, value out, won, lost, and what is sitting unanswered</li>
-        <li><b>Setup, training for your team, and the first month run alongside you</b></li>
+        <li><b>You only pay when someone clicks.</b> No clicks, no charge.</li>
+        <li><b>Google balances spend across the month, not day by day.</b> An unspent day is not banked and carried
+        forward as such &mdash; instead, on busier days Google may spend up to twice the daily amount to catch
+        the searches that are there.</li>
+        <li><b>It will never charge more than your monthly limit</b> &mdash; roughly the daily budget multiplied by
+        30.4. At &pound;1,500 a month, that is about &pound;49 a day on average.</li>
+        <li><b>Setting it to Northern Ireland only does not make it more expensive.</b> It concentrates the same money on
+        the searches you actually want.</li>
       </ul>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section>
+<section>
+  <div class="wrap">
+    <div class="h">Putting It Together</div>
+    <div style="overflow-x:auto">
+    <table class="cmp">
+      <tr><th></th><th>One-off</th><th>Monthly</th><th>Of which, to Google</th></tr>
+      <tr><td><b>Website measurement</b></td><td class="yes">Free</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td><b>Track A only</b> &mdash; weeks 1&ndash;4</td><td>&pound;2,250 &ndash; &pound;4,500</td><td>&pound;400 &ndash; &pound;900</td><td>&pound;0</td></tr>
+      <tr><td><b>Track A + Track B</b> &mdash; week 5 onward</td><td>&pound;2,250 &ndash; &pound;4,500</td><td>&pound;3,400 &ndash; &pound;3,900</td><td>&pound;1,500</td></tr>
+    </table>
+    </div>
+    <div class="tag" style="margin-top:12px">If the keyword report says the searches are not there, Track B does not start and you
+    carry on with Track A alone.</div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Where Track A Lands Within Its Range</div>
+    <table class="cmp">
+      <tr><th>Question</th><th>Status</th><th>Effect</th></tr>
+      <tr><td><b>Does it run in your existing system, or ours?</b></td><td>Open &mdash; you said "whatever works for you"</td><td>Ours is quicker to set up; yours depends on what it can do</td></tr>
+      <tr><td><b>How many people will use the quote list?</b></td><td>Open</td><td>Two or three sits at the bottom of the range</td></tr>
+      <tr><td><b>One estimate page, or one per service?</b></td><td>Open</td><td>Steel, resin floors and roofing separately is more work</td></tr>
+      <tr><td><b>How many old quotes go into the back catalogue?</b></td><td>Open</td><td>A few months is quick; several years takes longer</td></tr>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
     <div class="h">The Trade Counter &mdash; Separate, And Later</div>
     <div class="flag">
-      <div class="lab">A project in its own right, on the shop already installed on your site</div>
-      <p><b>&pound;3,500 &ndash; &pound;7,500 to build &middot; &pound;150 &ndash; &pound;400 a month support, optional</b></p>
-      <ul>
-        <li><b>Trade prices and an order button on tools and consumables</b> &mdash; brushes, rollers, overalls, masking, paddles</li>
-        <li><b>A trade login</b>, so each account sees its own agreed price rather than a public one</li>
-        <li><b>Order history and one-click reorder</b>, so a contractor can repeat last month's order</li>
-        <li><b>Stock shown on the product</b>, so nobody rings the counter to ask</li>
-        <li><b>Coatings deliberately excluded</b> &mdash; every Jotun, Remmers and Flexcrete system stays an enquiry</li>
-      </ul>
-      <p><b>We would not do this first.</b> It is the bigger decision of the two, and it is a much
-      better-informed one once the quote list has been running for a few months.</p>
+      <div class="lab">Your answer moved this one</div>
+      <div class="quote">"A fixed price list for each of our regular account customers, and they have their own unique price card."</div>
+      <p><b>&pound;3,500 &ndash; &pound;7,500 to build, &pound;150 &ndash; &pound;400 a month support, optional.</b> Each account
+      logging in and seeing only its own price card puts this towards the <b>upper end</b> of that range. The last open
+      question &mdash; whether it can read those price cards from the system you already use, rather than keeping a
+      second copy &mdash; decides where exactly.</p>
+      <p>We would still not do this first. It is a much better-informed decision once the quote list has been running for
+      a few months.</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section>
-    <div class="h">Both Together</div>
-    <div class="opp">
-      <div class="ocard"><div class="lab">Quote system only</div><div class="big">&pound;2.25k&ndash;&pound;4.5k</div><div class="small">then &pound;400&ndash;&pound;900 a month</div></div>
-      <div class="ocard"><div class="lab">Both, taken together</div><div class="big">&pound;5.75k&ndash;&pound;12k</div><div class="small">then &pound;550&ndash;&pound;1,300 a month</div></div>
-      <div class="ocard"><div class="lab">Website measurement</div><div class="big">Free</div><div class="small">installed either way</div></div>
-    </div>
-  </section>
-
-  <section>
-    <div class="h">What Moves A Price Within Its Range</div>
-    <div class="grid">
-      <div class="row"><div><div class="rname">Trade prices flat, or agreed per account?</div><div class="sc">A single trade list sits at the bottom of the counter range. Prices agreed customer by customer means more work.</div></div><div class="badge gB">BIG</div></div>
-      <div class="row"><div><div class="rname">Does it need to read your stock system?</div><div class="sc">Live stock and prices pulled from your existing system is an integration. A list we maintain separately is not.</div></div><div class="badge gB">BIG</div></div>
-      <div class="row"><div><div class="rname">How many people use the quote list?</div><div class="sc">Two or three is the bottom of the range.</div></div><div class="badge gC">SOME</div></div>
-      <div class="row"><div><div class="rname">One estimating page, or one per service?</div><div class="sc">A single page is the bottom. Steel, resin floors and roofing each having their own is more.</div></div><div class="badge gC">SOME</div></div>
-    </div>
-  </section>
-
-  <section>
+<section>
+  <div class="wrap">
     <div class="h">Not Included, Deliberately</div>
-    <ul class="road road2">
-      <li><b>No advertising of any kind</b> &mdash; no Google Ads, no Facebook, no spend on your behalf</li>
-      <li><b>Nothing that touches your accounts or stock system</b> &mdash; not replaced, not migrated</li>
-      <li><b>No new website</b> &mdash; yours is well built and everything here works with it</li>
-      <li><b>No selling coating systems online</b></li>
-      <li><b>No long tie-in</b> &mdash; the monthly element is monthly</li>
+    <ul class="road">
+      <li><b>No advertising outside Northern Ireland.</b></li>
+      <li><b>No ad spend before the keyword report</b> and before Track A is catching enquiries.</li>
+      <li><b>No advertising coating systems on price</b> &mdash; that is the low-margin end.</li>
+      <li><b>No volume campaigns and no homeowners.</b> Fewer, larger, specified jobs.</li>
+      <li><b>No new website</b> &mdash; the estimate page bolts onto the one you have.</li>
+      <li><b>Nothing that touches your accounts or stock system.</b></li>
+      <li><b>No selling coating systems online.</b> They stay an enquiry.</li>
+      <li><b>No long tie-in</b> &mdash; the monthly elements are monthly.</li>
     </ul>
-  </section>
+  </div>
+</section>
 
-  <div class="cta">
-    <h2>The measurement is free. Let us put it on this week.</h2>
-    <p>It takes twenty minutes and only records from the day it goes on. <b>Decide the rest once you can
-    see something.</b></p>
+<div class="cta">
+  <div class="wrap">
+    <h2>Simple, boring, and measurable. Track A first.</h2>
+    <p>The measurement is free and can go on this week &mdash; it only records from the day it is installed.</p>
   </div>
 </div>
 
 <footer>
   <div class="wrap">
-    <p>Prepared by Andrei Givero &middot; AG1 Consulting &middot; 7 September 2026</p>
-    <p>For Patterson Protective Coatings Ltd, 347b Albertbridge Road, Belfast BT5 4PY.
-    <b>Every figure on this page is an indicative range for discussion and is not a quotation, an offer
-    or a contract.</b> Ranges are based on the scope described in the accompanying audit as we
-    understand it today; <b>a firm price can only be given once we know your quote volume, whether your
-    trade prices are flat or agreed per account, and what your stock and accounts run on.</b> Those
-    answers may move a piece of work outside the range shown, in either direction, or remove the need
-    for it entirely. All figures are in pounds sterling and exclude VAT. <b>No claim is made or implied
-    about what any of this work would earn you</b>, and no revenue, order volume, quote volume, win rate
-    or return figure is stated or forecast anywhere. <b>The trade counter price assumes the ecommerce
-    software already present on your website can be used</b>; if it cannot, or if your existing systems
-    make a different approach sensible, we would re-scope and tell you rather than proceed. Brand and
-    company names are used for identification only and belong to their respective owners.</p>
+    Prepared by Andrei Givero &middot; AG1 Consulting &middot; updated 15 September 2026<br><br>
+    For Patterson Protective Coatings Ltd, 347b Albertbridge Road, Belfast BT5 4PY. <b>Every one-off and monthly
+    figure for Track A and the trade counter is an indicative range for discussion and is not a quotation, an offer or a
+    contract</b>; a firm price follows once the open questions above are answered. Track B is shown at a fixed monthly
+    figure, of which the stated ad spend is paid to Google and is not AG1's fee; the ad spend level can be set by you.
+    Quotations attributed to Warren Patterson are from our call of 14 September 2026. The description of Google Ads
+    budgeting summarises Google's published approach to average daily budgets and monthly charging limits and may change
+    if Google changes its policies. All figures are in pounds sterling and exclude VAT. <b>No claim is made or implied about
+    what any of this work would earn you, and no revenue, enquiry volume, survey or specification number, win rate or
+    return figure is stated or forecast anywhere.</b> Brand and company names are used for identification only.
   </div>
 </footer>
 </body></html>
