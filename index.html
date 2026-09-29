@@ -89,7 +89,15 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
 .gdot.now{background:var(--bad)}.gdot.proj{background:var(--good)}
 .gticks{display:flex;justify-content:space-between;margin:66px 4px 0;font-size:11px;letter-spacing:.08em;color:var(--mut);font-weight:700}
 @media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
+</style><style>
+.agnav{position:sticky;top:0;z-index:50;background:rgba(13,17,23,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line,#222b36)}
+.agnav .inner{max-width:1080px;margin:0 auto;padding:0 22px;display:flex;gap:2px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.agnav .inner::-webkit-scrollbar{height:0}
+.agnav a{flex:0 0 auto;padding:13px 13px;font-size:13.5px;font-weight:600;color:var(--mut,#8b949e);text-decoration:none;border-bottom:2px solid transparent;white-space:nowrap}
+.agnav a:hover{color:var(--ink,#e6edf3)}
+.agnav a.on{color:var(--accent,#2f81f7);border-bottom-color:var(--accent,#2f81f7)}
 </style></head><body>
+<nav class="agnav"><div class="inner"><a href="assets.html">All Assets</a><a href="recap.html">Recap</a><a href="pitch.html">What We Propose</a><a href="./" class="on">Audit</a><a href="competitors.html">Competitors</a><a href="market.html">Market</a><a href="campaigns.html">Paid Search</a><a href="plan.html">The Plan</a><a href="pricing.html">Pricing</a><a href="calculator.html">Calculator</a></div></nav>
 <header>
   <div class="wrap">
     <div class="eyebrow">Website &amp; Trade Counter Audit</div>
