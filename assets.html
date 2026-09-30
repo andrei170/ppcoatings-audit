@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
-<meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
 <title>All Assets &middot; Patterson Protective Coatings &middot; AG1 Consulting</title><style>
 :root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--mut:#9aa7b4;--line:#2a3340;--accent:#2f81f7;
   --good:#3fb950;--bad:#f85149;--gradF:#f85149;--gradD:#e8702a;--gradC:#d29922;--gradB:#3fb950;--gradA:#2ea043;}
@@ -91,7 +91,9 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
 @media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
 
 /* ---------- injected asset nav ---------- */
-.agnav{position:sticky;top:0;z-index:80;background:rgba(13,17,23,.92);backdrop-filter:saturate(1.5) blur(10px);border-bottom:1px solid var(--line)}
+/* display/padding/margin are declared explicitly so a page carrying its own bare
+   nav{} element rule (concept mockups do) cannot restyle the AG1 bar. */
+.agnav{display:block;padding:0;margin:0;position:sticky;top:0;z-index:80;background:rgba(13,17,23,.92);backdrop-filter:saturate(1.5) blur(10px);border-bottom:1px solid var(--line)}
 .agnav .inner{max-width:1080px;margin:0 auto;padding:0 22px;display:flex;flex-wrap:wrap;align-items:center;gap:6px}
 .agnav a{display:inline-block;padding:12px 14px;font-size:14px;font-weight:600;color:var(--mut);text-decoration:none;border-bottom:2px solid transparent;transition:color .15s,border-color .15s}
 .agnav a:hover{color:var(--ink);border-bottom-color:var(--accent)}
@@ -100,7 +102,6 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
 .agnav a.ext:hover{color:#fff}
 @media(max-width:560px){.agnav .inner{padding:0 14px}.agnav a{padding:10px 9px;font-size:13px}}
 </style></head><body>
-<nav class="agnav"><div class="inner"><a href="assets.html" class="on">All Assets</a><a href="recap.html">Recap</a><a href="pitch.html">What We Propose</a><a href="./">Audit</a><a href="competitors.html">Competitors</a><a href="market.html">Market</a><a href="campaigns.html">Paid Search</a><a href="plan.html">The Plan</a><a href="pricing.html">Pricing</a><a href="calculator.html">Calculator</a></div></nav>
 <header>
   <div class="wrap">
     <div class="eyebrow">All Assets</div>
@@ -113,6 +114,7 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
   <div class="wrap">
     <table class="cmp">
       <tr><th>Asset</th><th>Link</th></tr>
+      <tr><td><b>Before Monday</b> <span style="color:var(--mut);font-weight:400">&mdash; read this first: three things to send, two decisions for the room</span></td><td><a href="https://andrei170.github.io/ppcoatings-audit/launch.html" style="color:var(--accent)">andrei170.github.io/ppcoatings-audit/launch.html</a></td></tr>
       <tr><td><b>Recap Of Our Call</b> <span style="color:var(--mut);font-weight:400">&mdash; 14 Sept, in your words</span></td><td><a href="https://andrei170.github.io/ppcoatings-audit/recap.html" style="color:var(--accent)">andrei170.github.io/ppcoatings-audit/recap.html</a></td></tr>
       <tr><td><b>What We Propose</b> <span style="color:var(--mut);font-weight:400">&mdash; pricing, deliverables and the money picture, all in one</span></td><td><a href="https://andrei170.github.io/ppcoatings-audit/pitch.html" style="color:var(--accent)">andrei170.github.io/ppcoatings-audit/pitch.html</a></td></tr>
       <tr><td><b>Audit</b></td><td><a href="https://andrei170.github.io/ppcoatings-audit/" style="color:var(--accent)">andrei170.github.io/ppcoatings-audit/</a></td></tr>
